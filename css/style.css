@@ -50,7 +50,7 @@ body {
 }
 
 .container {
-   position: relative;
+   /* position: relative; */
    width: 1170px;
    margin: auto;
 }
@@ -186,10 +186,7 @@ body {
 
 .fund {
    width: 100%;
-   /* height: 200px; */
-   /* background-color: rgb(113, 232, 148); */
-   /* font-family: 'Open Sans', sans-serif; */
-   /* font-size: 30px; */
+   padding-bottom: 120px;
 }
 
 .fund__header {
@@ -214,8 +211,14 @@ body {
    justify-content: space-between;
 }
 
+.fund__services p {
+   margin-bottom: 100px;
+}
+
 .fund__service {
-   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 .service__legislation {
@@ -223,22 +226,19 @@ body {
 }
 
 .service-info {
-   position: absolute;
+   margin-bottom: 10px;
 }
 
 .info-acception {
-   top: 22px;
-   right: 71px;
+   margin-top: -188px;
 }
 
 .info-adoption {
-   top: 28px;
-   right: 82px;
+   margin-top: -195px;
 }
 
 .info-legislation {
-   top: 32px;
-   right: 80px;
+   margin-top: -192px;
 }
 
 .fund__service p {
@@ -251,29 +251,62 @@ body {
 
    color: #3E4757;
    overflow-x: visible;
-   /* position: absolute; */
 }
 
-/* .p__acception {
-   position: absolute;
-   top: 127px;
-} */
+.fund__phone {
+   width: 907px;
+   margin: auto;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
 
-/* .p__adoption {
-   position: absolute;
-   top: 50px;
-} */
+.phone-item {
+   font-family: 'Neucha';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 26px;
+   text-align: center;
 
-.p__legislation {
-   /* position: absolute;
-   top: 42px; */
-   overflow-x: visible;
+   color: #3E4757;
+}
+
+.number-phone {
+   font-size: 36px;
+   line-height: 40px;
+   color: #B57EDC;
+}
+
+.time-phone {
+   font-size: 18px;
+   line-height: 20px;
+   text-align: start;
+   color: #3E4757;
+}
+
+.wrapper-footer {
+   background: #DDE9B5;
 }
 
 .footer {
    width: 100%;
-   height: 200px;
-   background-color: rgb(237, 172, 53);
+   padding-top: 37px;
+   padding-bottom: 37px;
+   /* padding: 37px, 0, 37px, 0; */
+   /* height: 200px; */
+   background-color: rgb(237, 172, 53, 0);
    font-family: 'Neucha', cursive;
    font-size: 30px;
+}
+
+.footer-copyright {
+   font-family: 'Neucha';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 22px;
+
+   color: #3E4757;
+   text-align: center;
 }
