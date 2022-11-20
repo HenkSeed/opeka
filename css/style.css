@@ -73,8 +73,6 @@ body {
    height: 40%;
 }
 
-.logo>img {}
-
 .header-menu {
    display: flex;
    flex-direction: row;
@@ -103,10 +101,39 @@ body {
    margin-bottom: 46px;
 }
 
-
 .section-main__form {
    display: flex;
+   flex-direction: column;
 }
+
+.section-main__form-table {
+   margin-top: -14px;
+   border: #000000 1px solid;
+   padding: 30px 60px 32px 60px;
+   border-radius: 10px;
+   font-family: 'Neucha';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 28px;
+   line-height: 31px;
+   /* text-align: center; */
+   color: #3E4757;
+}
+
+/* .section-main__form-table label {
+   text-justify: start;
+} */
+
+/* .main__form-fieldset label {
+   text-align: start;
+} */
+
+.main__form-fieldset {
+   border: none;
+}
+
+
+
 
 .section-main__aside {
    display: flex;
