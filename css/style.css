@@ -110,7 +110,7 @@ body {
    margin-top: -14px;
    border: #000000 1px solid;
    padding: 30px 60px 32px 60px;
-   border-radius: 10px;
+   border-radius: 20px;
    font-family: 'Neucha';
    font-style: normal;
    font-weight: 400;
@@ -120,21 +120,74 @@ body {
    color: #3E4757;
 }
 
-/* .section-main__form-table label {
-   text-justify: start;
-} */
-
-/* .main__form-fieldset label {
-   text-align: start;
-} */
-
 .main__form-fieldset {
    border: none;
+   padding: 0;
 }
 
+.main__form-fieldset legend {
+   text-align: center;
+}
 
+.main__form-fieldset li {
+   list-style-type: none;
+}
 
+.main__form-item {
+   position: relative;
+   margin-bottom: 6px;
+   margin-top: 2px;
+}
 
+.main__form-item label {
+   font-family: 'Neucha';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 22px;
+   /* line-height: 24px; */
+   line-height: 32px;
+   color: #3E4757;
+}
+
+.main__form-item .input {
+   /* content: ">"; */
+   appearance: none;
+   outline: none;
+   border: none;
+   /* overflow: hidden; */
+   width: 100%;
+   background: #E5EFF7;
+   /* background: #E5EFF7 url('../img/select-arrow.svg') no-repeat right; */
+   border-radius: 5px;
+   padding: 10px 10px 10px 10px;
+   font-family: 'Neucha';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 20px;
+   color: #ABABAB;
+}
+
+.select-arrow {
+   z-index: 1;
+   position: absolute;
+   right: 10px;
+   top: 50px;
+}
+
+.submit-button {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 100%;
+   outline: none;
+   border: none;
+   background: linear-gradient(180deg, #FFCB9D 0%, #FF9500 100%);
+   box-shadow: 0px 4px 0px #BD6E28;
+   border-radius: 5px;
+}
+
+/* -------------------------------------------- */
 .section-main__aside {
    display: flex;
    flex-direction: column;

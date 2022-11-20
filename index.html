@@ -88,20 +88,41 @@
                <div class="section-main__form-table">
                   <fieldset class="main__form-fieldset">
                      <legend>Анкеты детей</legend>
-                     <label for="region">Регион</label><br>
-                     <select name="region" id="region">
-                        <option value="">Выберите регион</option>
-                     </select>
-                     <br>
-                     <!-- <input type="text"><br> -->
-                     <label for="sex">Пол ребёнка</label><br>
-                     <input type="text"><br>
-                     <label for="age">Возраст</label><br>
-                     <input type="text"><br>
-                     <label for="name">Имя</label><br>
-                     <input type="text"><br>
-                     <br>
-                     <button type="submit">НАЙТИ</button>
+                     <ul class="main__form-list">
+                        <li class="main__form-item">
+                           <label for=" region">Регион</label><br>
+                           <select class="input" name="region" id="region">
+                              <option value="">Выберите регион</option>
+                           </select>
+                           <img class="select-arrow" src="./img/select-arrow.svg" alt="select-arrow">
+                        </li>
+                        <li class="main__form-item">
+                           <label for="sex">Пол ребёнка</label><br>
+                           <select class="input" name="sex" id="sex">
+                              <option value="">Выберите пол ребёнка </option>
+                              <option value="boy">Мальчик</option>
+                              <option value="girl">Девочка</option>
+                           </select>
+                           <img class="select-arrow" src="./img/select-arrow.svg" alt="select-arrow">
+                        </li>
+                        <li class="main__form-item">
+                           <label for=" age">Возраст</label><br>
+                           <select class="input" name="age" id="age">
+                              <option value="">Укажите возраст ребёнка</option>
+                           </select>
+                           <img class="select-arrow" src="./img/select-arrow.svg" alt="select-arrow">
+                        </li>
+                        <li class="main__form-item">
+                           <label for=" name">Имя</label><br>
+                           <input class="input" type="text">
+                        </li>
+                        <li class="main__form-item">
+                           <button class="button submit-button" type=" submit">НАЙТИ</button>
+                        </li>
+
+                     </ul>
+
+
                   </fieldset>
                </div>
             </div>
