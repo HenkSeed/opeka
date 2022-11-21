@@ -82,6 +82,7 @@ body {
 .header-menu__item {
    margin-left: 31px;
    text-decoration: none;
+   list-style-type: none;
 }
 
 .header-menu__item>a {
@@ -91,6 +92,11 @@ body {
    font-weight: 400;
    font-size: 18px;
    line-height: 20px;
+   color: #3E4757;
+}
+
+.header-menu__item>a:hover {
+   border-bottom: 2px solid #B57EDC;
    color: #3E4757;
 }
 
