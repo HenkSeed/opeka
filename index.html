@@ -80,7 +80,7 @@
 
    <div class="wrapper wrapper-main">
       <div class="container">
-         <section class="section-main">
+         <section class="section-main section">
             <div class="section-main__form">
                <div class="section-main__form-img">
                   <img src="./img/children.png" alt="children" class="section-main__children">
@@ -92,6 +92,7 @@
                         <ul class="main__form-list">
                            <li class="main__form-item">
                               <label for=" region">Регион</label><br>
+                              <span class="region-search hidden">Выберите регион</span>
                               <select class="input" name="region" id="region">
                                  <option value="">Выберите регион</option>
                                  <option value="">Алтайский край</option>
@@ -174,19 +175,23 @@
                                  <option value="">Ямало-Ненецкий автономный округ</option>
                                  <option value="">Ярославская область</option>
                               </select>
-                              <img class="select-arrow" src="./img/select-arrow.svg" alt="select-arrow">
+                              <img class="select-arrow" id="select-region__arrow" src="./img/select-arrow.svg"
+                                 alt="select-arrow">
                            </li>
                            <li class="main__form-item">
                               <label for="sex">Пол ребёнка</label><br>
+                              <span class="sex-search hidden">Выберите пол ребёнка</span>
                               <select class="input" name="sex" id="sex">
                                  <option value="">Выберите пол ребёнка </option>
                                  <option value="boy">Мужской</option>
                                  <option value="girl">Женский</option>
                               </select>
-                              <img class="select-arrow" src="./img/select-arrow.svg" alt="select-arrow">
+                              <img class="select-arrow" id="select-sex__arrow" src="./img/select-arrow.svg"
+                                 alt="select-arrow">
                            </li>
                            <li class="main__form-item">
                               <label for=" age">Возраст</label><br>
+                              <span class="age-search hidden">Укажите возраст ребёнка</span>
                               <select class="input" name="age" id="age">
                                  <option value="">Укажите возраст ребёнка</option>
                                  <option value="0-3">0-3 года</option>
@@ -195,7 +200,8 @@
                                  <option value="11-14">11-14 лет</option>
                                  <option value="15-17">15-17 лет</option>
                               </select>
-                              <img class="select-arrow" src="./img/select-arrow.svg" alt="select-arrow">
+                              <img class="select-arrow" id="select-age__arrow" src="./img/select-arrow.svg"
+                                 alt="select-arrow">
                            </li>
                            <li class="main__form-item">
                               <label for=" name">Имя</label><br>
@@ -237,7 +243,7 @@
          </section>
          <!-- /.section-main -->
 
-         <section class="fund">
+         <section class="fund section">
             <div class="fund__header">
                Специалисты горячей линии фонда оказывают информационную поддержку по направлениям
             </div>
@@ -289,7 +295,7 @@
 
    <div class="wrapper wrapper-footer">
       <div class="container">
-         <footer class="footer">
+         <footer class="footer section">
             <div class="footer-copyright">
                Copyright © 2022. Территория без сирот. Все права защищены.
             </div>

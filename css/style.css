@@ -41,7 +41,7 @@ body {
 
 .wrapper {
    margin: auto;
-   width: 1920px;
+   max-width: 192rem;
    background-color: rgb(255, 255, 255);
 }
 
@@ -51,16 +51,20 @@ body {
 
 .container {
    /* position: relative; */
-   width: 1170px;
+   max-width: 117rem;
    margin: auto;
+   /* padding-left: 4.5rem;
+   padding-right: 4.5rem; */
+   padding-left: 10px;
+   padding-right: 10px;
 }
 
 .header {
    width: 100%;
    background-color: #f4f5f8;
    align-items: center;
-   padding-top: 12px;
-   padding-bottom: 12px;
+   padding-top: 1.2rem;
+   padding-bottom: 1.2rem;
 }
 
 .header-wrapper {
@@ -76,7 +80,7 @@ body {
 .header-menu {
    display: flex;
    flex-direction: row;
-   font-size: 16px;
+   font-size: 1.6rem;
 }
 
 .header-menu__item {
@@ -105,11 +109,25 @@ body {
    display: flex;
    flex-direction: row;
    margin-bottom: 46px;
+   justify-content: space-between;
 }
+
+/* .section {
+   padding-left: 10px;
+   padding-right: 10px;
+} */
 
 .section-main__form {
    display: flex;
    flex-direction: column;
+}
+
+.region-search {
+   display: block;
+}
+
+.hidden {
+   display: none;
 }
 
 .section-main__form-table {
@@ -242,7 +260,7 @@ body {
    margin-right: 56px;
    float: right;
    margin-left: 50px;
-   width: 192px;
+   max-width: 19.2rem;
    height: 141px;
 }
 
@@ -321,7 +339,7 @@ body {
 }
 
 .fund__services {
-   width: 1039px;
+   max-width: 1039px;
    margin: auto;
    display: flex;
    flex-direction: row;
@@ -426,4 +444,91 @@ body {
 
    color: #3E4757;
    text-align: center;
+}
+
+@media (max-width: 1080px) {
+   .header-menu__item {
+      margin-left: 1rem;
+   }
+
+   .section-main {
+      /* width: 100%;
+      display: flex; */
+      flex-direction: column-reverse;
+      margin-bottom: 46px;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   .section-main__aside {
+      margin-left: 0;
+      align-items: center;
+   }
+
+   .section-main__aside-img {
+      margin-left: 10px;
+   }
+}
+
+/* @media (max-width: 860px) { */
+@media (max-width: 945px) {
+   .fund__services {
+      flex-direction: column;
+      justify-content: space-between;
+      padding-left: 40px;
+      padding-right: 40px;
+   }
+
+   .service__acception {
+      align-self: flex-start;
+   }
+
+   .service__legislation {
+      width: auto;
+      align-self: flex-end;
+   }
+
+   .fund__services p {
+      margin-bottom: 30px;
+   }
+
+   .fund__phone {
+      flex-direction: column;
+      margin-top: -95px;
+   }
+
+   .fund__phone p {
+      text-align: start;
+   }
+
+}
+
+@media (max-width: 740px) {
+   .service__acception {
+      align-self: auto;
+   }
+
+   .service__legislation {
+      width: auto;
+      align-self: auto;
+   }
+
+   .fund {
+      /* width: 100%; */
+      padding-bottom: 45px;
+   }
+
+   .fund__services p {
+      margin-bottom: 75px;
+   }
+
+   .fund__phone {
+      /* margin-top: 45px; */
+      margin-top: 0px;
+      width: auto;
+   }
+
+   .fund__phone p {
+      text-align: center;
+   }
 }
