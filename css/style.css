@@ -237,7 +237,7 @@ body {
    cursor: pointer;
 }
 
-.main__form-button {
+.main__form_submit-button {
    display: flex;
    flex-direction: row;
    position: relative;
@@ -566,5 +566,35 @@ body {
    .fund__header {
       /* max-width: 600px; */
       width: auto;
+   }
+}
+
+@media (max-width: 480px) {
+   .submit-button-arrow {
+      right: 80px;
+   }
+}
+
+@media (max-width: 430px) {
+   .submit-button-arrow {
+      right: 60px;
+   }
+}
+
+@media (max-width: 390px) {
+   .submit-button-arrow {
+      right: 40px;
+   }
+}
+
+@media (max-width: 350px) {
+   .submit-button-arrow {
+      right: 30px;
+   }
+}
+
+@media (max-width: 330px) {
+   .submit-button-arrow {
+      right: 10px;
    }
 }
