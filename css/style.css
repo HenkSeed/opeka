@@ -77,6 +77,14 @@ body {
    height: 40%;
 }
 
+.nav-menu {
+   max-height: auto;
+}
+
+.burger__menu {
+   display: none;
+}
+
 .header-menu {
    display: flex;
    flex-direction: row;
@@ -463,15 +471,36 @@ body {
    .section-main__aside {
       margin-left: 0;
       align-items: center;
+      flex-direction: column-reverse;
    }
 
    .section-main__aside-img {
       margin-left: 10px;
+      /* max-width: 511px; */
+      /* max-width: 100%; */
+   }
+
+   .section-main__aside-img img {
+      /* margin-left: 10px; */
+      /* max-width: 511px; */
+      max-width: 100%;
+   }
+
+   .section-main__form-img img {
+      max-width: 100%;
    }
 }
 
 /* @media (max-width: 860px) { */
 @media (max-width: 945px) {
+   .nav-menu {
+      display: none;
+   }
+
+   .burger__menu {
+      display: block;
+   }
+
    .fund__services {
       flex-direction: column;
       justify-content: space-between;
@@ -530,5 +559,12 @@ body {
 
    .fund__phone p {
       text-align: center;
+   }
+}
+
+@media (max-width: 630px) {
+   .fund__header {
+      /* max-width: 600px; */
+      width: auto;
    }
 }
