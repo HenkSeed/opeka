@@ -4,7 +4,7 @@
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
    <title>Opeka</title>
    <link rel="stylesheet" href="./css/normalize.css" />
    <link rel="stylesheet" href="./css/style.css" />
@@ -15,304 +15,377 @@
 </head>
 
 <body>
-   <div class="wrapper wrapper-header">
-      <div class="container">
-         <header class="header">
-            <div class="header-wrapper">
-               <div class="logo">
-                  <img src="./img/logo-tmp.svg" alt="Logo">
-                  <!-- <img src="./img/orange_heart.svg" alt="Orange heart"> -->
-               </div>
-               <nav class="nav-menu">
-                  <ul class="header-menu">
-                     <li class="header-menu__item">
-                        <a href="" class="header-menu__link">
-                           О фонде
-                        </a>
-                     </li>
-                     <li class="header-menu__item">
-                        <a href="" class="header-menu__link">
-                           О проекте
-                        </a>
-                     </li>
-                     <li class="header-menu__item">
-                        <a href="" class="header-menu__link">
-                           Дети
-                        </a>
-                     </li>
-                     <li class="header-menu__item">
-                        <a href="" class="header-menu__link">
-                           Для тех, кто в начале пути
-                        </a>
-                     </li>
-                     <li class="header-menu__item">
-                        <a href="" class="header-menu__link">
-                           Реквизиты
-                        </a>
-                     </li>
-                     <li class="header-menu__item">
-                        <a href="" class="header-menu__link">
-                           Контакты
-                        </a>
-                     </li>
-                     <li class="header-menu__item">
-                        <a href="" class="header-menu__link">
-                           Отзывы
-                        </a>
-                     </li>
-                     <li class="header-menu__item">
-                        <a href="" class="header-menu__link">
-                           Новости
-                        </a>
-                     </li>
-
-
-                  </ul>
-               </nav>
-               <div class="burger__menu">
-                  <img src="./img/burger_menu.svg" alt="Burger-menu">
-                  <!-- <svg width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                     <path
-                        d="M28.5 24.5H15.2143C14.3863 24.5 13.7143 25.172 13.7143 26C13.7143 26.828 14.3863 27.5 15.2143 27.5H28.5C29.328 27.5 30 26.828 30 25.9999C30 25.172 29.328 24.5 28.5 24.5ZM1.5 3.49996H28.5C29.328 3.49996 30 2.82799 30 1.99995C30 1.17192 29.328 0.499954 28.5 0.499954H1.5C0.67201 0.500003 0 1.17196 0 2C0 2.82799 0.67201 3.49996 1.5 3.49996ZM28.5 12.5H8.14286C7.31487 12.5 6.64286 13.172 6.64286 14C6.64286 14.828 7.31487 15.5 8.14286 15.5H28.5C29.328 15.5 30 14.828 30 14C30 13.172 29.328 12.5 28.5 12.5Z"
-                        fill="#3E4757" />
-                  </svg> -->
-               </div>
-            </div>
-            <!-- /.header-wrapper -->
-         </header>
-         <!-- /.header -->
-      </div>
-      <!-- /.container -->
-   </div>
-   <!-- /.wrapper -->
-
-   <div class="wrapper wrapper-main">
-      <div class="container">
-         <section class="section-main section">
-            <div class="section-main__form">
-               <div class="section-main__form-img">
-                  <img src="./img/children.png" alt="children" class="section-main__children">
-               </div>
-               <div class="section-main__form-table">
-                  <form action="#" method="get">
-                     <fieldset class="main__form-fieldset">
-                        <legend>Анкеты детей</legend>
-                        <ul class="main__form-list">
-                           <li class="main__form-item">
-                              <label for=" region">Регион</label><br>
-                              <span class="region-search hidden">Выберите регион</span>
-                              <select class="input" name="region" id="region">
-                                 <option value="">Выберите регион</option>
-                                 <option value="">Алтайский край</option>
-                                 <option value="">Архангельская область</option>
-                                 <option value="">Астраханская область</option>
-                                 <option value="">Белгородская область</option>
-                                 <option value="">Брянская область</option>
-                                 <option value="">Владимирская область</option>
-                                 <option value="">Волгоградская область</option>
-                                 <option value="">Вологодская область</option>
-                                 <option value="">Воронежская область</option>
-                                 <option value="">Еврейская автономная область</option>
-                                 <option value="">Забайкальский край</option>
-                                 <option value="">Ивановская область</option>
-                                 <option value="">Иркутская область</option>
-                                 <option value="">Кабардино-Балкарская республика</option>
-                                 <option value="">Калининградская область</option>
-                                 <option value="">Калужская область</option>
-                                 <option value="">Камчатский край</option>
-                                 <option value="">Карачаево-Черкесская Республика</option>
-                                 <option value="">Кемеровская область</option>
-                                 <option value="">Кировская область</option>
-                                 <option value="">Костромская область</option>
-                                 <option value="">Краснодарский край</option>
-                                 <option value="">Красноярский край</option>
-                                 <option value="">Курганская область</option>
-                                 <option value="">Курская область</option>
-                                 <option value="">Ленинградская область</option>
-                                 <option value="">Липецкая область</option>
-                                 <option value="">Магаданская область</option>
-                                 <option value="">Москва</option>
-                                 <option value="">Московская область</option>
-                                 <option value="">Мурманская область</option>
-                                 <option value="">Ненецкий автономный округ</option>
-                                 <option value="">Нижегородская область</option>
-                                 <option value="">Новгородская область</option>
-                                 <option value="">Новосибирская область</option>
-                                 <option value="">Омская область</option>
-                                 <option value="">Оренбургская область</option>
-                                 <option value="">Орловская область</option>
-                                 <option value="">Пермский край</option>
-                                 <option value="">Приморский край</option>
-                                 <option value="">Псковская область</option>
-                                 <option value="">Республика Адыгея</option>
-                                 <option value="">Республика Алтай</option>
-                                 <option value="">Республика Башкортостан</option>
-                                 <option value="">Республика Бурятия</option>
-                                 <option value="">Республика Дагестан</option>
-                                 <option value="">Республика Карелия</option>
-                                 <option value="">Республика Коми</option>
-                                 <option value="">Республика Крым</option>
-                                 <option value="">Республика Марий Эл</option>
-                                 <option value="">Республика Мордовия</option>
-                                 <option value="">Республика Саха (Якутия)</option>
-                                 <option value="">Республика Северная Осетия - Алания</option>
-                                 <option value="">Республика Татарстан</option>
-                                 <option value="">Республика Тыва</option>
-                                 <option value="">Республика Хакасия</option>
-                                 <option value="">Республика Чувашия</option>
-                                 <option value="">Ростовская область</option>
-                                 <option value="">Рязанская область</option>
-                                 <option value="">Самарская область</option>
-                                 <option value="">Санкт-Петербург</option>
-                                 <option value="">Саратовская область</option>
-                                 <option value="">Свердловская область</option>
-                                 <option value="">Севастополь</option>
-                                 <option value="">Смоленская область</option>
-                                 <option value="">Ставропольский край</option>
-                                 <option value="">Тамбовская область</option>
-                                 <option value="">Тверская область</option>
-                                 <option value="">Томская область</option>
-                                 <option value="">Тульская область</option>
-                                 <option value="">Тюменская область</option>
-                                 <option value="">Удмуртская Республика</option>
-                                 <option value="">Ульяновская область</option>
-                                 <option value="">Хабаровский край</option>
-                                 <option value="">Ханты-Мансийский автономный округ</option>
-                                 <option value="">Челябинская область</option>
-                                 <option value="">Чукотский автономный округ</option>
-                                 <option value="">Ямало-Ненецкий автономный округ</option>
-                                 <option value="">Ярославская область</option>
-                              </select>
-                              <img class="select-arrow" id="select-region__arrow" src="./img/select-arrow.svg"
-                                 alt="select-arrow">
-                           </li>
-                           <li class="main__form-item">
-                              <label for="sex">Пол ребёнка</label><br>
-                              <span class="sex-search hidden">Выберите пол ребёнка</span>
-                              <select class="input" name="sex" id="sex">
-                                 <option value="">Выберите пол ребёнка </option>
-                                 <option value="boy">Мужской</option>
-                                 <option value="girl">Женский</option>
-                              </select>
-                              <img class="select-arrow" id="select-sex__arrow" src="./img/select-arrow.svg"
-                                 alt="select-arrow">
-                           </li>
-                           <li class="main__form-item">
-                              <label for=" age">Возраст</label><br>
-                              <span class="age-search hidden">Укажите возраст ребёнка</span>
-                              <select class="input" name="age" id="age">
-                                 <option value="">Укажите возраст ребёнка</option>
-                                 <option value="0-3">0-3 года</option>
-                                 <option value="4-6">4-6 лет</option>
-                                 <option value="7-10">7-10 лет</option>
-                                 <option value="11-14">11-14 лет</option>
-                                 <option value="15-17">15-17 лет</option>
-                              </select>
-                              <img class="select-arrow" id="select-age__arrow" src="./img/select-arrow.svg"
-                                 alt="select-arrow">
-                           </li>
-                           <li class="main__form-item">
-                              <label for=" name">Имя</label><br>
-                              <input class="input" type="text" placeholder="Поиск по имени">
-                           </li>
-                           <li class="main__form-item">
-                              <div class="main__form_submit-button">
-                                 <button class="button submit-button" type=" submit">НАЙТИ</button>
-                                 <img class="submit-button-arrow" src="./img/submit-button-arrow.svg"
-                                    alt="button-arrow">
-                              </div>
-                           </li>
-
-                        </ul>
-                     </fieldset>
-                  </form>
-               </div>
-            </div>
-
-            <div class="section-main__aside">
-               <div class="section-main__aside-info">
-                  <img src="./img/hand.png" alt="Hand">
-                  <h2 class="section-main__aside-header">Более <span class="aside-header__span">15 лет</span></h2>
-                  <p class="section-main__aside-text">проект «Территория без сирот» <br> реализуется благотворительным
-                     фондом «Волонтеры в помощь детям-сиротам» <a href="www.otkazniki.ru">www.otkazniki.ru</a></p>
-                  <p class="section-main__aside-text">Цель проекта – способствовать созданию позитивного образа
-                     усыновления и информирование общества о возможности принятия ребенка в семью. Мы создали сайт с
-                     индивидуальными <span>страничками детей, которые ищут родителей</span>
-                  </p>
-                  <p class="section-main__aside-text">Более 5 тысяч детей уже нашли семью с помощью нашего проекта.
-                     Волонтеры регулярно ездят к ребятам в разные регионы России, фотографируют, снимают видеоролики,
-                     пишут истории и обновляют информацию на сайте.
-                  </p>
-               </div>
-               <div class="section-main__aside-img">
-                  <img src="./img/family.png" alt="children" class="section-main__family">
-               </div>
-            </div>
-         </section>
-         <!-- /.section-main -->
-
-         <section class="fund section">
-            <div class="fund__header">
-               Специалисты горячей линии фонда оказывают информационную поддержку по направлениям
-            </div>
-
-            <div class="fund__services">
-               <div class="service__acception fund__service">
-                  <img src="./img/service_bg1.png" alt="BG1">
-                  <div class="service-info info-acception">
-                     <img src="./img/service_pic1.png" alt="acception">
+   <div class="body__wrapper">
+      <div class="wrapper wrapper-header">
+         <div class="container">
+            <header class="header">
+               <div class="header-wrapper">
+                  <div class="logo">
+                     <img src="./img/logo-tmp.svg" alt="Logo">
+                     <!-- <img src="./img/orange_heart.svg" alt="Orange heart"> -->
                   </div>
-                  <p class="p-acception">Принятие ребенка<br>в семью</p>
-               </div>
+                  <nav class="nav-menu">
+                     <ul class="header-menu">
+                        <li class="header-menu__item">
+                           <a href="" class="header-menu__link">
+                              О фонде
+                           </a>
+                        </li>
+                        <li class="header-menu__item">
+                           <a href="" class="header-menu__link">
+                              О проекте
+                           </a>
+                        </li>
+                        <li class="header-menu__item">
+                           <a href="" class="header-menu__link">
+                              Дети
+                           </a>
+                        </li>
+                        <li class="header-menu__item">
+                           <a href="" class="header-menu__link">
+                              Для тех, кто в начале пути
+                           </a>
+                        </li>
+                        <li class="header-menu__item">
+                           <a href="" class="header-menu__link">
+                              Реквизиты
+                           </a>
+                        </li>
+                        <li class="header-menu__item">
+                           <a href="" class="header-menu__link">
+                              Контакты
+                           </a>
+                        </li>
+                        <li class="header-menu__item">
+                           <a href="" class="header-menu__link">
+                              Отзывы
+                           </a>
+                        </li>
+                        <li class="header-menu__item">
+                           <a href="" class="header-menu__link">
+                              Новости
+                           </a>
+                        </li>
 
-               <div class="service__adoption fund__service">
-                  <img src="./img/service_bg2.png" alt="BG2">
-                  <div class="service-info info-adoption">
-                     <img src="./img/service_pic2.png" alt="adoption">
+
+                     </ul>
+                  </nav>
+                  <div class="burger__icon">
+                     <img src="./img/burger_icon.svg" alt="Burger-icon">
+                     <!-- <svg width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M28.5 24.5H15.2143C14.3863 24.5 13.7143 25.172 13.7143 26C13.7143 26.828 14.3863 27.5 15.2143 27.5H28.5C29.328 27.5 30 26.828 30 25.9999C30 25.172 29.328 24.5 28.5 24.5ZM1.5 3.49996H28.5C29.328 3.49996 30 2.82799 30 1.99995C30 1.17192 29.328 0.499954 28.5 0.499954H1.5C0.67201 0.500003 0 1.17196 0 2C0 2.82799 0.67201 3.49996 1.5 3.49996ZM28.5 12.5H8.14286C7.31487 12.5 6.64286 13.172 6.64286 14C6.64286 14.828 7.31487 15.5 8.14286 15.5H28.5C29.328 15.5 30 14.828 30 14C30 13.172 29.328 12.5 28.5 12.5Z"
+                              fill="#3E4757" />
+                        </svg> -->
                   </div>
-                  <p class="p-adoption">Социальная<br>и психологическая адаптация</p>
                </div>
+               <!-- /.header-wrapper -->
+            </header>
+            <!-- /.header -->
+         </div>
+         <!-- /.container -->
+      </div>
+      <!-- /.wrapper -->
 
-               <div class="service__legislation fund__service">
-                  <img src="./img/service_bg3.png" alt="BG3">
-                  <div class="service-info info-legislation">
-                     <img src="./img/service_pic3.png" alt="legislation">
+      <div class="wrapper wrapper-main">
+         <div class="container">
+            <section class="section-main section">
+               <div class="section-main__form">
+                  <div class="section-main__form-img">
+                     <img src="./img/children.png" alt="children" class="section-main__children">
                   </div>
-                  <p class="p-legislation">Правовые и процедурные вопросы по всем<br>формам семейного устройства</p>
-               </div>
-            </div>
+                  <div class="section-main__form-table">
+                     <form action="#" method="get">
+                        <fieldset class="main__form-fieldset">
+                           <legend>Анкеты детей</legend>
+                           <ul class="main__form-list">
+                              <li class="main__form-item">
+                                 <label for=" region">Регион</label><br>
+                                 <span class="region-search hidden">Выберите регион</span>
+                                 <select class="input" name="region" id="region">
+                                    <option value="">Выберите регион</option>
+                                    <option value="altaireg">Алтайский край</option>
+                                    <option value="archang">Архангельская область</option>
+                                    <option value="astrahan">Астраханская область</option>
+                                    <option value="belgorod">Белгородская область</option>
+                                    <option value="bryansk">Брянская область</option>
+                                    <option value="vladimir">Владимирская область</option>
+                                    <option value="volgograd">Волгоградская область</option>
+                                    <option value="vologda">Вологодская область</option>
+                                    <option value="voronezh">Воронежская область</option>
+                                    <option value="evrei">Еврейская автономная область</option>
+                                    <option value="zabaikal">Забайкальский край</option>
+                                    <option value="ivanov">Ивановская область</option>
+                                    <option value="irkutsk">Иркутская область</option>
+                                    <option value="kabardin">Кабардино-Балкарская республика</option>
+                                    <option value="kalinin">Калининградская область</option>
+                                    <option value="kaluga">Калужская область</option>
+                                    <option value="kamchatka">Камчатский край</option>
+                                    <option value="karachaev">Карачаево-Черкесская Республика</option>
+                                    <option value="kemerovo">Кемеровская область</option>
+                                    <option value="kirov">Кировская область</option>
+                                    <option value="kastroma">Костромская область</option>
+                                    <option value="krasnodar">Краснодарский край</option>
+                                    <option value="krasnoyar">Красноярский край</option>
+                                    <option value="kurgan">Курганская область</option>
+                                    <option value="kursk">Курская область</option>
+                                    <option value="leningradreg">Ленинградская область</option>
+                                    <option value="lipetsk">Липецкая область</option>
+                                    <option value="magadan">Магаданская область</option>
+                                    <option value="moskva">Москва</option>
+                                    <option value="moskvareg">Московская область</option>
+                                    <option value="murmansk">Мурманская область</option>
+                                    <option value="nenezk">Ненецкий автономный округ</option>
+                                    <option value="nizhni">Нижегородская область</option>
+                                    <option value="novgorod">Новгородская область</option>
+                                    <option value="novosib">Новосибирская область</option>
+                                    <option value="omsk">Омская область</option>
+                                    <option value="orenburg">Оренбургская область</option>
+                                    <option value="orel">Орловская область</option>
+                                    <option value="perm">Пермский край</option>
+                                    <option value="primorsk">Приморский край</option>
+                                    <option value="pskov">Псковская область</option>
+                                    <option value="adygei">Республика Адыгея</option>
+                                    <option value="altai">Республика Алтай</option>
+                                    <option value="bashkort">Республика Башкортостан</option>
+                                    <option value="buryat">Республика Бурятия</option>
+                                    <option value="dagestan">Республика Дагестан</option>
+                                    <option value="karel">Республика Карелия</option>
+                                    <option value="komi">Республика Коми</option>
+                                    <option value="krym">Республика Крым</option>
+                                    <option value="mariel">Республика Марий Эл</option>
+                                    <option value="mordov">Республика Мордовия</option>
+                                    <option value="yakut">Республика Саха (Якутия)</option>
+                                    <option value="osetia">Республика Северная Осетия - Алания</option>
+                                    <option value="tatarstan">Республика Татарстан</option>
+                                    <option value="tyva">Республика Тыва</option>
+                                    <option value="hakasia">Республика Хакасия</option>
+                                    <option value="chuvashia">Республика Чувашия</option>
+                                    <option value="rostov">Ростовская область</option>
+                                    <option value="ryazan">Рязанская область</option>
+                                    <option value="samara">Самарская область</option>
+                                    <option value="peterburg">Санкт-Петербург</option>
+                                    <option value="saratov">Саратовская область</option>
+                                    <option value="sverdlovsk">Свердловская область</option>
+                                    <option value="sevastopol">Севастополь</option>
+                                    <option value="smolensk">Смоленская область</option>
+                                    <option value="stavropol">Ставропольский край</option>
+                                    <option value="tambov">Тамбовская область</option>
+                                    <option value="tver">Тверская область</option>
+                                    <option value="tomsk">Томская область</option>
+                                    <option value="tula">Тульская область</option>
+                                    <option value="tumen">Тюменская область</option>
+                                    <option value="udmurtia">Удмуртская Республика</option>
+                                    <option value="ulianovsk">Ульяновская область</option>
+                                    <option value="habarovsk">Хабаровский край</option>
+                                    <option value="hantymans">Ханты-Мансийский автономный округ</option>
+                                    <option value="chelyabins">Челябинская область</option>
+                                    <option value="chucotka">Чукотский автономный округ</option>
+                                    <option value="yamalonenezk">Ямало-Ненецкий автономный округ</option>
+                                    <option value="yaroslavl">Ярославская область</option>
+                                 </select>
+                                 <img class="select-arrow" id="select-region__arrow" src="./img/select-arrow.svg"
+                                    alt="select-arrow">
+                              </li>
+                              <li class="main__form-item">
+                                 <label for="sex">Пол ребёнка</label><br>
+                                 <span class="sex-search hidden">Выберите пол ребёнка</span>
+                                 <select class="input" name="sex" id="sex">
+                                    <option value="">Выберите пол ребёнка </option>
+                                    <option value="boy">Мужской</option>
+                                    <option value="girl">Женский</option>
+                                 </select>
+                                 <img class="select-arrow" id="select-sex__arrow" src="./img/select-arrow.svg"
+                                    alt="select-arrow">
+                              </li>
+                              <li class="main__form-item">
+                                 <label for=" age">Возраст</label><br>
+                                 <span class="age-search hidden">Укажите возраст ребёнка</span>
+                                 <select class="input" name="age" id="age">
+                                    <option value="">Укажите возраст ребёнка</option>
+                                    <option value="0-3">0-3 года</option>
+                                    <option value="4-6">4-6 лет</option>
+                                    <option value="7-10">7-10 лет</option>
+                                    <option value="11-14">11-14 лет</option>
+                                    <option value="15-17">15-17 лет</option>
+                                 </select>
+                                 <img class="select-arrow" id="select-age__arrow" src="./img/select-arrow.svg"
+                                    alt="select-arrow">
+                              </li>
+                              <li class="main__form-item">
+                                 <label for=" name">Имя</label><br>
+                                 <input class="input" type="text" placeholder="Поиск по имени">
+                              </li>
+                              <li class="main__form-item">
+                                 <div class="main__form_submit-button">
+                                    <button class="button submit-button" type=" submit">НАЙТИ</button>
+                                    <img class="submit-button-arrow" src="./img/submit-button-arrow.svg"
+                                       alt="button-arrow">
+                                 </div>
+                              </li>
 
-            <div class="fund__phone">
-               <div class="phone-item">
-                  <p class="hot-phone">Телефон горячей линии:</p>
+                           </ul>
+                        </fieldset>
+                     </form>
+                  </div>
                </div>
-               <div class="phone-item">
-                  <p class="number-phone">8-800-700-88-05</p>
-                  <p class="time-phone">с 10:00 до 20:00 и с 1:00 до 10:00</p>
-               </div>
-               <div class="phone-item">
-                  <p class="free-phone">Звонки из любого региона бесплатны </p>
-               </div>
-            </div>
-         </section>
-         <!-- /.fund -->
-      </div>
-      <!-- /.container -->
-   </div>
-   <!-- /.wrapper -->
 
-   <div class="wrapper wrapper-footer">
-      <div class="container">
-         <footer class="footer section">
-            <div class="footer-copyright">
-               Copyright © 2022. Территория без сирот. Все права защищены.
-            </div>
-         </footer>
-         <!-- /.footer -->
+               <div class="section-main__aside">
+                  <div class="section-main__aside-info">
+                     <img src="./img/hand.png" alt="Hand">
+                     <h2 class="section-main__aside-header">Более <span class="aside-header__span">15 лет</span></h2>
+                     <p class="section-main__aside-text">проект «Территория без сирот» <br> реализуется
+                        благотворительным
+                        фондом «Волонтеры в помощь детям-сиротам» <a href="www.otkazniki.ru">www.otkazniki.ru</a></p>
+                     <p class="section-main__aside-text">Цель проекта – способствовать созданию позитивного образа
+                        усыновления и информирование общества о возможности принятия ребенка в семью. Мы создали сайт с
+                        индивидуальными <span>страничками детей, которые ищут родителей</span>
+                     </p>
+                     <p class="section-main__aside-text">Более 5 тысяч детей уже нашли семью с помощью нашего проекта.
+                        Волонтеры регулярно ездят к ребятам в разные регионы России, фотографируют, снимают видеоролики,
+                        пишут истории и обновляют информацию на сайте.
+                     </p>
+                  </div>
+                  <div class="section-main__aside-img">
+                     <img src="./img/family.png" alt="children" class="section-main__family">
+                  </div>
+               </div>
+            </section>
+            <!-- /.section-main -->
+
+            <section class="fund section">
+               <div class="fund__header">
+                  Специалисты горячей линии фонда оказывают информационную поддержку по направлениям
+               </div>
+
+               <div class="fund__services">
+                  <div class="service__acception fund__service">
+                     <img src="./img/service_bg1.png" alt="BG1">
+                     <div class="service-info info-acception">
+                        <img src="./img/service_pic1.png" alt="acception">
+                     </div>
+                     <p class="p-acception">Принятие ребенка<br>в семью</p>
+                  </div>
+
+                  <div class="service__adoption fund__service">
+                     <img src="./img/service_bg2.png" alt="BG2">
+                     <div class="service-info info-adoption">
+                        <img src="./img/service_pic2.png" alt="adoption">
+                     </div>
+                     <p class="p-adoption">Социальная<br>и психологическая адаптация</p>
+                  </div>
+
+                  <div class="service__legislation fund__service">
+                     <img src="./img/service_bg3.png" alt="BG3">
+                     <div class="service-info info-legislation">
+                        <img src="./img/service_pic3.png" alt="legislation">
+                     </div>
+                     <p class="p-legislation">Правовые и процедурные вопросы по всем<br>формам семейного устройства</p>
+                  </div>
+               </div>
+
+               <div class="fund__phone">
+                  <div class="phone-item">
+                     <p class="hot-phone">Телефон горячей линии:</p>
+                  </div>
+                  <div class="phone-item">
+                     <p class="number-phone">8-800-700-88-05</p>
+                     <p class="time-phone">с 10:00 до 20:00 и с 1:00 до 10:00</p>
+                  </div>
+                  <div class="phone-item">
+                     <p class="free-phone">Звонки из любого региона бесплатны </p>
+                  </div>
+               </div>
+            </section>
+            <!-- /.fund -->
+         </div>
+         <!-- /.container -->
       </div>
-      <!-- /.container -->
+      <!-- /.wrapper -->
+
+      <div class="wrapper wrapper-footer">
+         <div class="container">
+            <footer class="footer section">
+               <div class="footer-copyright">
+                  Copyright © 2022. Территория без сирот. Все права защищены.
+               </div>
+            </footer>
+            <!-- /.footer -->
+         </div>
+         <!-- /.container -->
+      </div>
+      <!-- /.wrapper -->
+
+      <div class="modal__burger_menu">
+
+         <div class="wrapper wrapper-modal">
+            <div class="container  container_modal">
+               <header class="header header-modal">
+                  <div class="header-wrapper_modal">
+                     <div class="logo">
+                        <img src="./img/logo-tmp.svg" alt="Logo">
+                        <!-- <img src="./img/orange_heart.svg" alt="Orange heart"> -->
+                     </div>
+                     <div class="burger__close-icon">
+                        <img src="./img/burger_close_icon.svg" alt="Burger-icon">
+                     </div>
+                  </div>
+                  <!-- /.header-wrapper_modal -->
+                  <nav class="nav-menu_modal">
+                     <ul class="header-menu_modal">
+                        <li class="header-menu__item_modal">
+                           <a href="" class="header-menu__link_modal">
+                              О фонде
+                           </a>
+                        </li>
+                        <li class="header-menu__item_modal">
+                           <a href="" class="header-menu__link_modal">
+                              О проекте
+                           </a>
+                        </li>
+                        <li class="header-menu__item_modal">
+                           <a href="" class="header-menu__link_modal">
+                              Дети
+                           </a>
+                        </li>
+                        <li class="header-menu__item_modal">
+                           <a href="" class="header-menu__link_modal">
+                              Для тех, кто в начале пути
+                           </a>
+                        </li>
+                        <li class="header-menu__item_modal">
+                           <a href="" class="header-menu__link_modal">
+                              Реквизиты
+                           </a>
+                        </li>
+                        <li class="header-menu__item_modal">
+                           <a href="" class="header-menu__link_modal">
+                              Контакты
+                           </a>
+                        </li>
+                        <li class="header-menu__item_modal">
+                           <a href="" class="header-menu__link_modal">
+                              Отзывы
+                           </a>
+                        </li>
+                        <li class="header-menu__item_modal">
+                           <a href="" class="header-menu__link_modal">
+                              Новости
+                           </a>
+                        </li>
+
+                     </ul>
+                  </nav>
+               </header>
+               <!-- /.header -->
+            </div>
+            <!-- /.container_modal -->
+         </div>
+         <!-- /.wrapper-header -->
+
+      </div>
    </div>
-   <!-- /.wrapper -->
+   <!-- /.body__wrapper -->
 </body>
 
 </html>

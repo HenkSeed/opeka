@@ -36,7 +36,10 @@ body {
    margin: auto;
    padding: 0;
    background-color: #f4f5f8;
-   /* background-color: rgb(255, 255, 255); */
+}
+
+.body__wrapper {
+   position: relative;
 }
 
 .wrapper {
@@ -48,6 +51,8 @@ body {
 .wrapper-header {
    background-color: #f4f5f8;
 }
+
+
 
 .container {
    /* position: relative; */
@@ -73,15 +78,36 @@ body {
    justify-content: space-between;
 }
 
+
 .logo {
    height: 40%;
+   cursor: pointer;
 }
 
 .nav-menu {
    max-height: auto;
 }
 
-.burger__menu {
+.modal__burger_menu {
+   background-color: #f4f5f8;
+   position: absolute;
+   top: 0;
+   height: 100vh;
+   width: 100vw;
+   max-width: 100%;
+   z-index: 20;
+   display: none;
+}
+
+.opened {
+   display: block;
+}
+
+.closed {
+   display: none;
+}
+
+.burger__icon {
    display: none;
 }
 
@@ -95,6 +121,51 @@ body {
    margin-left: 31px;
    text-decoration: none;
    list-style-type: none;
+}
+
+.wrapper-modal {
+   background-color: #f4f5f8;
+   z-index: 100;
+}
+
+.header-modal {
+   /* z-index: 100; */
+}
+
+.header-wrapper_modal {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+
+.nav-menu_modal {
+   margin-top: 40px;
+   margin-left: 50px;
+}
+
+.header-menu_modal {
+   display: flex;
+   flex-direction: column;
+   font-size: 1.6rem;
+
+}
+
+.header-menu__item_modal {
+   text-decoration: none;
+   list-style-type: none;
+   padding: 8px;
+}
+
+.header-menu__item_modal>a {
+   text-decoration: none;
+   font-family: 'Neucha';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 26px;
+   color: #3E4757;
+   /* list-style-type: none; */
 }
 
 .header-menu__item>a {
@@ -397,7 +468,7 @@ body {
 }
 
 .fund__phone {
-   width: 907px;
+   /* width: 907px; */
    margin: auto;
    display: flex;
    flex-direction: row;
@@ -497,8 +568,15 @@ body {
       display: none;
    }
 
-   .burger__menu {
+   .burger__icon {
       display: block;
+      cursor: pointer;
+   }
+
+   /* Будет убираться без этого свойства, а при закрытии модального окна */
+   .burger__close-icon {
+      display: block;
+      cursor: pointer;
    }
 
    .fund__services {
