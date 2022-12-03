@@ -92,11 +92,27 @@ body {
    background-color: #f4f5f8;
    position: absolute;
    top: 0;
+   left: -100vw;
    height: 100vh;
    width: 100vw;
-   max-width: 100%;
+   /* Пригодится при быстром открытии модального окна (без скроллинга) */
+   /* max-width: 100%; */
    z-index: 20;
-   display: none;
+   /* display: none; */
+}
+
+.fade_left {
+   transition: all 0.8s ease 0s;
+   transform: translateX(-100vw);
+   opacity: 0;
+   visibility: hidden;
+}
+
+.appear_left {
+   transition: all 0.8s ease 0s;
+   transform: translateX(0vw);
+   opacity: 1;
+   visibility: visible;
 }
 
 .opened {

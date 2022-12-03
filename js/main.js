@@ -28,11 +28,17 @@ const toggleAgeArrow = function () {
 };
 
 const openModal = function () {
-   modalBurgerMenu.classList.toggle('opened');
+   modalBurgerMenu.classList.add('appear_left');
+   modalBurgerMenu.classList.remove('fade_left');
+   document.querySelector('.modal__burger_menu').style.left='0';
+   // modalBurgerMenu.classList.add('opened');
 }
 
 const closeModal = function () {
-   modalBurgerMenu.classList.toggle('opened');
+   modalBurgerMenu.classList.add('fade_left');
+   modalBurgerMenu.classList.remove('appear_left');
+   // modalBurgerMenu.classList.toggle('opened');
+   // modalBurgerMenu.style.left = '-100vw';
 }
 
 regionSearch.addEventListener('click', toggleSearch);
@@ -43,17 +49,18 @@ selectAgeArrow.addEventListener('click', toggleAgeArrow);
 
 
 burgerIcon.addEventListener('click', (event) => {
+   modalBurgerMenu.classList.remove('appear_left');
    openModal();
+   modalBurgerMenu.classList.add('opened');
+   
 	// Исключаем прокрутку документа под открытым окном сообщения об ошибке
 	document.body.style.overflow = 'hidden';
-	// sectionError.classList.remove('hidden');
-	// sectionError.classList.remove('fade_left');
-	// sectionError.classList.add('appear_left');
 });
 
 burgerCloseIcon.addEventListener('click', (event) => {
+   modalBurgerMenu.classList.remove('fade_left');
    closeModal();
-	// Исключаем прокрутку документа под открытым окном сообщения об ошибке
+	// Разрешаем прокрутку документа 
 	document.body.style.overflow = '';
 });
 
