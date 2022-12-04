@@ -6,7 +6,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
    <title>Opeka</title>
-   <link rel="stylesheet" href="./css/normalize.css" />
+   <link rel="stylesheet" href="./css/normalize.min.css" />
    <link rel="stylesheet" href="./css/style.css" />
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,8 +16,9 @@
 
 <body>
    <div class="body__wrapper">
+
       <div class="wrapper wrapper-header">
-         <div class="container">
+         <div class="container container__header">
             <header class="header">
                <div class="header-wrapper">
                   <div class="logo">
@@ -26,42 +27,42 @@
                   </div>
                   <nav class="nav-menu">
                      <ul class="header-menu">
-                        <li class="header-menu__item">
+                        <li class="header-menu__item" id="about_fund">
                            <a href="" class="header-menu__link">
                               О фонде
                            </a>
                         </li>
-                        <li class="header-menu__item">
+                        <li class="header-menu__item" id="about_project">
                            <a href="" class="header-menu__link">
                               О проекте
                            </a>
                         </li>
-                        <li class="header-menu__item">
+                        <li class="header-menu__item" id="children">
                            <a href="" class="header-menu__link">
                               Дети
                            </a>
                         </li>
-                        <li class="header-menu__item">
+                        <li class="header-menu__item" id="to_start">
                            <a href="" class="header-menu__link">
                               Для тех, кто в начале пути
                            </a>
                         </li>
-                        <li class="header-menu__item">
+                        <li class="header-menu__item" id="details">
                            <a href="" class="header-menu__link">
                               Реквизиты
                            </a>
                         </li>
-                        <li class="header-menu__item">
+                        <li class="header-menu__item" id="contacts">
                            <a href="" class="header-menu__link">
                               Контакты
                            </a>
                         </li>
-                        <li class="header-menu__item">
+                        <li class="header-menu__item" id="reviews">
                            <a href="" class="header-menu__link">
                               Отзывы
                            </a>
                         </li>
-                        <li class="header-menu__item">
+                        <li class="header-menu__item" id="news">
                            <a href="" class="header-menu__link">
                               Новости
                            </a>
@@ -87,8 +88,38 @@
       </div>
       <!-- /.wrapper -->
 
+      <div class="wrapper-dropdown">
+         <div class="container container__dropdown">
+            <div class="dropdown">
+               <ul class="dropdown__menu">
+                  <li class="dropdown__item">
+                     <a href="" class="dropdown__link">Миссия и история</a>
+                     <div class="dropdown__link_image">
+                        <img src="./img/dropdown_circle.png" alt="Circle">
+                     </div>
+                  </li>
+                  <li class="dropdown__item">
+                     <a href="" class="dropdown__link">Пресс-центр</a>
+                     <div class="dropdown__link_image">
+                        <img src="./img/dropdown_circle.png" alt="Circle">
+                     </div>
+                  </li>
+                  <li class="dropdown__item">
+                     <a href="" class="dropdown__link">Документы</a>
+                     <div class="dropdown__link_image">
+                        <img src="./img/dropdown_circle.png" alt="Circle">
+                     </div>
+                  </li>
+                  <li class="dropdown__item">
+                     <a href="" class="dropdown__link">Друзья и партнёры</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+
       <div class="wrapper wrapper-main">
-         <div class="container">
+         <div class="container container__main">
             <section class="section-main section">
                <div class="section-main__form">
                   <div class="section-main__form-img">
@@ -318,57 +349,57 @@
 
       <div class="modal__burger_menu">
 
-         <div class="wrapper wrapper-modal">
+         <div class="wrapper wrapper-modal__burger">
             <div class="container  container_modal">
-               <header class="header header-modal">
-                  <div class="header-wrapper_modal">
+               <div class="burger-modal">
+                  <div class="burger-wrapper_modal">
                      <div class="logo">
                         <img src="./img/logo-tmp.svg" alt="Logo">
                         <!-- <img src="./img/orange_heart.svg" alt="Orange heart"> -->
                      </div>
                      <div class="burger__close-icon">
-                        <img src="./img/burger_close_icon.svg" alt="Burger-icon">
+                        <img src="./img/burger_close_icon.svg" alt="Burger Close icon">
                      </div>
                   </div>
-                  <!-- /.header-wrapper_modal -->
-                  <nav class="nav-menu_modal">
-                     <ul class="header-menu_modal">
-                        <li class="header-menu__item_modal">
+                  <!-- /.burger-wrapper_modal -->
+                  <nav class="burger__nav-menu_modal">
+                     <ul class="burger__menu_modal">
+                        <li class="burger__menu__item_modal">
                            <a href="" class="header-menu__link_modal">
                               О фонде
                            </a>
                         </li>
-                        <li class="header-menu__item_modal">
+                        <li class="burger__menu__item_modal">
                            <a href="" class="header-menu__link_modal">
                               О проекте
                            </a>
                         </li>
-                        <li class="header-menu__item_modal">
+                        <li class="burger__menu__item_modal">
                            <a href="" class="header-menu__link_modal">
                               Дети
                            </a>
                         </li>
-                        <li class="header-menu__item_modal">
+                        <li class="burger__menu__item_modal">
                            <a href="" class="header-menu__link_modal">
                               Для тех, кто в начале пути
                            </a>
                         </li>
-                        <li class="header-menu__item_modal">
+                        <li class="burger__menu__item_modal">
                            <a href="" class="header-menu__link_modal">
                               Реквизиты
                            </a>
                         </li>
-                        <li class="header-menu__item_modal">
+                        <li class="burger__menu__item_modal">
                            <a href="" class="header-menu__link_modal">
                               Контакты
                            </a>
                         </li>
-                        <li class="header-menu__item_modal">
+                        <li class="burger__menu__item_modal">
                            <a href="" class="header-menu__link_modal">
                               Отзывы
                            </a>
                         </li>
-                        <li class="header-menu__item_modal">
+                        <li class="burger__menu__item_modal">
                            <a href="" class="header-menu__link_modal">
                               Новости
                            </a>
@@ -376,12 +407,12 @@
 
                      </ul>
                   </nav>
-               </header>
-               <!-- /.header -->
+               </div>
+               <!-- /.burger-modal -->
             </div>
-            <!-- /.container_modal -->
+            <!-- /.container_modal__burger -->
          </div>
-         <!-- /.wrapper-header -->
+         <!-- /.wrapper-modal__burger -->
 
       </div>
    </div>

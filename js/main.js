@@ -12,34 +12,49 @@ const modalBurgerMenu = document.querySelector('.modal__burger_menu');
 
 const burgerCloseIcon = document.querySelector('.burger__close-icon');
 
+const aboutFund = document.getElementById('about_fund');
+const wrapperDropdown = document.querySelector('.wrapper-dropdown');
+
 const toggleSearch = function () {
 	regionSearch.classList.toggle('hidden');
-   // regionSearch.
 };
 
 const toggleSexArrow = function () {
 	sexSearch.classList.toggle('hidden');
-   // regionSearch.
 };
 
 const toggleAgeArrow = function () {
 	ageSearch.classList.toggle('hidden');
-   // regionSearch.
 };
 
 const openModal = function () {
    modalBurgerMenu.classList.add('appear_left');
    modalBurgerMenu.classList.remove('fade_left');
    document.querySelector('.modal__burger_menu').style.left='0';
-   // modalBurgerMenu.classList.add('opened');
 }
 
 const closeModal = function () {
    modalBurgerMenu.classList.add('fade_left');
    modalBurgerMenu.classList.remove('appear_left');
-   // modalBurgerMenu.classList.toggle('opened');
-   // modalBurgerMenu.style.left = '-100vw';
 }
+
+aboutFund.addEventListener('click', (event) => {
+   // console.dir(wrapperDropdown);
+   event.preventDefault();
+   console.dir(event.target);
+   wrapperDropdown.setAttribute("style","top: 115px");
+})
+
+document.addEventListener('click', (event) => {
+   if (event.target.className !== "wrapper-dropdown" 
+   && event.target.className !== "header-menu__link") {
+      wrapperDropdown.setAttribute("style","top: -100vh");
+      // console.dir(event.target);
+   } else {
+      console.dir(event.target.className);
+   }
+})
+
 
 regionSearch.addEventListener('click', toggleSearch);
 selectArrow.addEventListener('click', toggleSearch);
