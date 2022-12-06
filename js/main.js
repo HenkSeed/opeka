@@ -28,27 +28,52 @@ const toggleAgeArrow = function () {
 };
 
 const openModal = function () {
-   modalBurgerMenu.classList.add('appear_left');
-   modalBurgerMenu.classList.remove('fade_left');
+   modalBurgerMenu.classList.remove('appear-left__burger');
+
+   modalBurgerMenu.classList.add('appear-left__burger');
+   modalBurgerMenu.classList.remove('fade-left__burger');
    document.querySelector('.modal__burger_menu').style.left='0';
+
+   modalBurgerMenu.classList.add('opened');
+   wait();
+   
+}
+
+// Prevents abrupt disappearance of the vertical scrollbar
+async function wait() {
+   await new Promise(resolve => setTimeout(resolve, 700));
+   document.body.style.overflow = 'hidden';
+
+//   return 10;
 }
 
 const closeModal = function () {
-   modalBurgerMenu.classList.add('fade_left');
-   modalBurgerMenu.classList.remove('appear_left');
+   modalBurgerMenu.classList.add('fade-left__burger');
+   modalBurgerMenu.classList.remove('appear-left__burger');
+}
+
+const appearDropdown = function () {
+   wrapperDropdown.classList.remove('disappear-top__dropdown');
+   // To close the dropdown if clicked next time (toggle)
+   wrapperDropdown.classList.toggle('appear-top__dropdown');
+}
+
+const disappearDropdown = function () {
+   wrapperDropdown.classList.add('disappear-top__dropdown');
+   wrapperDropdown.classList.remove('appear-top__dropdown');
 }
 
 aboutFund.addEventListener('click', (event) => {
-   // console.dir(wrapperDropdown);
    event.preventDefault();
-   console.dir(event.target);
-   wrapperDropdown.setAttribute("style","top: 115px");
+   appearDropdown();
+   // wrapperDropdown.setAttribute("style","top: 115px");
 })
 
 document.addEventListener('click', (event) => {
    if (event.target.className !== "wrapper-dropdown" 
    && event.target.className !== "header-menu__link") {
-      wrapperDropdown.setAttribute("style","top: -100vh");
+      disappearDropdown();
+      // wrapperDropdown.setAttribute("style","top: -100vh");
       // console.dir(event.target);
    } else {
       console.dir(event.target.className);
@@ -64,16 +89,16 @@ selectAgeArrow.addEventListener('click', toggleAgeArrow);
 
 
 burgerIcon.addEventListener('click', (event) => {
-   modalBurgerMenu.classList.remove('appear_left');
+   // modalBurgerMenu.classList.remove('appear-left__burger');
    openModal();
-   modalBurgerMenu.classList.add('opened');
+   // modalBurgerMenu.classList.add('opened');
    
 	// Исключаем прокрутку документа под открытым окном сообщения об ошибке
-	document.body.style.overflow = 'hidden';
+	// document.body.style.overflow = 'hidden';
 });
 
 burgerCloseIcon.addEventListener('click', (event) => {
-   modalBurgerMenu.classList.remove('fade_left');
+   modalBurgerMenu.classList.remove('fade-left__burger');
    closeModal();
 	// Разрешаем прокрутку документа 
 	document.body.style.overflow = '';
