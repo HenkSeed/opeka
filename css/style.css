@@ -137,6 +137,7 @@ body {
    z-index: 10;
    /* top: 115px; */
    /* top: -100vh; */
+   top: calc(-100vh + 140px);
    /* margin-top: -10px; */
 }
 
@@ -197,7 +198,9 @@ body {
 
 .disappear-top__dropdown {
    transition: all 0.8s ease 0s;
-   transform: translateY(calc(-100vh+115px));
+   transform: translateY(calc(-100vh+140px));
+   /* transform: translateY(calc(-100vh+150px)); */
+   /* transform: translateY(calc(-100vh+calc(attr(height)))); */
    opacity: 0;
    visibility: hidden;
    /* top: -100vh; */

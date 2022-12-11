@@ -120,3 +120,9 @@ burgerCloseIcon.addEventListener('click', (event) => {
 
 // burgerIcon.addEventListener('click', openModal);
 // burgerCloseIcon.addEventListener('click', closeModal);
+
+// =========================================================
+// .center{
+//    /* ... */
+//    margin-top: calc(50vh - calc(attr(height) / 2));
+// }
