@@ -158,11 +158,12 @@ body {
    text-align: center;
    background: #FFFFFF;
    /* box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.25); */
-   z-index: 20;
+   z-index: 10;
    /* position: absolute; */
-   top: 0;
+   top: -20;
    margin-left: auto;
    margin-right: auto;
+   /* position: absolute; */
 
 }
 
@@ -562,6 +563,7 @@ body {
    /* Пригодится при быстром открытии модального окна (без скроллинга) */
    /* max-width: 100%; */
    z-index: 150;
+   /* z-index: 9; */
    /* display: none; */
 }
 
@@ -600,6 +602,8 @@ body {
    display: flex;
    align-items: center;
    justify-content: space-between;
+   z-index: 110;
+   /* z-index: 15; */
 }
 
 .burger__nav-menu_modal {
