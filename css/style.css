@@ -64,8 +64,8 @@ body {
    margin: auto;
    /* padding-left: 4.5rem;
    padding-right: 4.5rem; */
-   padding-left: 10px;
-   padding-right: 10px;
+   padding-left: 20px;
+   padding-right: 20px;
 }
 
 .container__main {
@@ -137,8 +137,10 @@ body {
    z-index: 10;
    /* top: 115px; */
    /* top: -100vh; */
-   top: calc(-100vh + 140px);
+   top: calc(calc(calc(attr(height))) + 115px);
+   /* top: calc(-100vh + 115px); */
    /* margin-top: -10px; */
+   visibility: hidden;
 }
 
 .container__dropdown {
@@ -639,6 +641,7 @@ body {
 }
 
 @media (max-width: 1080px) {
+
    .header-menu__item {
       margin-left: 1rem;
    }
@@ -654,6 +657,22 @@ body {
       margin-left: 0;
       align-items: center;
       flex-direction: column-reverse;
+   }
+
+   .section-main__aside-text,
+   .section-main__aside-text a,
+   .section-main__aside-text span {
+      font-size: calc(15px + 3 / (1080 - 320) * (100vw - 320px));
+      line-height: calc(19px + 6 / (1080 - 320) * (100vw - 320px));
+   }
+
+   .section-main__aside-text:not(:last-child) {
+      margin-bottom: 15px;
+   }
+
+   .section-main__aside-info img,
+   .section-main__family {
+      display: none;
    }
 
    .section-main__aside-img {
@@ -702,6 +721,10 @@ body {
       align-self: flex-end;
    }
 
+   .fund {
+      padding-bottom: calc(80px);
+   }
+
    .fund__services p {
       margin-bottom: 30px;
    }
@@ -718,6 +741,11 @@ body {
 }
 
 @media (max-width: 740px) {
+
+   .section-main__form-img {
+      margin-top: -15px;
+   }
+
    .service__acception {
       align-self: auto;
    }
@@ -748,6 +776,10 @@ body {
 @media (max-width: 630px) {
    .fund__header {
       width: auto;
+      margin-bottom: 25px;
+      margin-top: calc(-15px + ((100vw - 320px)/(40)));
+      font-size: calc(22px + ((100vw - 320px)/(30)));
+      line-height: calc(24px + ((100vw - 320px)/(300 / 10)));
    }
 }
 
@@ -757,9 +789,13 @@ body {
    }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 435px) {
    .submit-button-arrow {
       right: 60px;
+   }
+
+   .fund__phone {
+      margin-top: -18px;
    }
 }
 
