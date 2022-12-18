@@ -283,6 +283,30 @@ body {
    color: #3E4757;
 }
 
+.main__form-search-field {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+
+   appearance: none;
+   outline: none;
+   border: none;
+   /* overflow: hidden; */
+   width: 100%;
+   background: #E5EFF7;
+   /* background: #E5EFF7 url(../img/select-arrow.svg) no-repeat right; */
+   border-radius: 5px;
+   padding: 10px 10px 10px 10px;
+   font-family: 'Neucha';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 20px;
+   color: #ABABAB;
+   cursor: pointer;
+}
+
 .main__form-item .input {
    /* content: ">"; */
    appearance: none;
@@ -353,8 +377,12 @@ body {
 .section-main__aside {
    display: flex;
    flex-direction: column;
-   margin-left: 60px;
+   /* margin-left: 60px; */
+   /* when no order */
+   margin-right: 60px;
    padding-top: 40px;
+   order: -1;
+   /* Added */
 }
 
 .section-main__aside-info {
@@ -640,8 +668,7 @@ body {
    /* list-style-type: none; */
 }
 
-@media (max-width: 1080px) {
-
+@media (max-width: 1100px) {
    .header-menu__item {
       margin-left: 1rem;
    }
@@ -655,8 +682,14 @@ body {
 
    .section-main__aside {
       margin-left: 0;
+      margin-right: 0;
       align-items: center;
       flex-direction: column-reverse;
+   }
+
+   .section-main__aside-header {
+      font-size: calc(30px + 18 / (1100 - 320) * (100vw - 320px));
+      line-height: calc(40px + 13 / (1100 - 320) * (100vw - 320px));
    }
 
    .section-main__aside-text,
@@ -686,17 +719,52 @@ body {
    .section-main__form-img img {
       max-width: 100%;
    }
+
+   .section-main__form-table {
+      padding-left: calc(10px + 40 * ((100vw - 320px)/(1000)));
+      padding-right: calc(10px + 40 * ((100vw - 320px)/(1000)));
+   }
 }
 
 /* @media (max-width: 860px) { */
 @media (max-width: 945px) {
+   .container {
+      padding-left: 10px;
+      padding-right: 10px;
+   }
+
+   .header,
+   .burger-modal {
+      padding-top: 5px;
+      padding-bottom: 5px;
+   }
+
+   .logo img {
+      /* width: calc(68% + ((100vw / 945px) * 32 / 625)); */
+      width: calc((202px - 65 * (945px - 100vw) / 625));
+   }
+
    .nav-menu {
       display: none;
    }
 
-   .burger__icon {
+   .burger__icon,
+   .burger__close-icon {
       display: block;
       cursor: pointer;
+      width: calc((30px - 10 * (945px - 100vw) / 625));
+      align-self: flex-start;
+      margin-top: 6px;
+      /* z-index: 200; */
+   }
+
+   .burger__close-icon {
+      margin-right: 15px;
+   }
+
+   .burger__icon img,
+   .burger__close-icon img {
+      width: calc((30px - 15 * (945px - 100vw) / 625));
    }
 
    /* Будет убираться без этого свойства, а при закрытии модального окна */

@@ -131,9 +131,15 @@
                            <legend>Анкеты детей</legend>
                            <ul class="main__form-list">
                               <li class="main__form-item">
-                                 <label for=" region">Регион</label><br>
-                                 <span class="region-search hidden">Выберите регион</span>
-                                 <select class="input" name="region" id="region">
+                                 <label for="region">Регион</label><br>
+                                 <div class="main__form-search-field">
+                                    <span class="main__form-search-region">Выберите регион</span>
+                                    <span class="arrow-down"><img src="./img/select-arrow-down.svg"
+                                          alt="select-arrow"></span>
+                                    <span class="arrow-up hidden"><img src="./img/select-arrow-up.svg"
+                                          alt="select-arrow"></span>
+                                 </div>
+                                 <select class="input hidden" name="region" id="region">
                                     <option value="">Выберите регион</option>
                                     <option value="altaireg">Алтайский край</option>
                                     <option value="archang">Архангельская область</option>
@@ -215,24 +221,38 @@
                                     <option value="yamalonenezk">Ямало-Ненецкий автономный округ</option>
                                     <option value="yaroslavl">Ярославская область</option>
                                  </select>
-                                 <img class="select-arrow" id="select-region__arrow" src="./img/select-arrow.svg"
-                                    alt="select-arrow">
+                                 <!-- <img class="select-arrow" id="select-region__arrow" src="./img/select-arrow.svg"
+                                    alt="select-arrow"> -->
                               </li>
                               <li class="main__form-item">
                                  <label for="sex">Пол ребёнка</label><br>
-                                 <span class="sex-search hidden">Выберите пол ребёнка</span>
-                                 <select class="input" name="sex" id="sex">
+                                 <div class="main__form-search-field">
+                                    <span class="main__form-search-sex">Выберите пол ребёнка</span>
+                                    <span class="arrow-down"><img src="./img/select-arrow-down.svg"
+                                          alt="select arrow down"></span>
+                                    <span class="arrow-up hidden"><img src="./img/select-arrow-up.svg"
+                                          alt="select arrow up"></span>
+                                 </div>
+                                 <!-- <span class="sex-search hidden">Выберите пол ребёнка</span> -->
+                                 <select class="input hidden" name="sex" id="sex">
                                     <option value="">Выберите пол ребёнка </option>
                                     <option value="boy">Мужской</option>
                                     <option value="girl">Женский</option>
                                  </select>
-                                 <img class="select-arrow" id="select-sex__arrow" src="./img/select-arrow.svg"
-                                    alt="select-arrow">
+                                 <!-- <img class="select-arrow" id="select-sex__arrow" src="./img/select-arrow.svg"
+                                    alt="select-arrow"> -->
                               </li>
                               <li class="main__form-item">
-                                 <label for=" age">Возраст</label><br>
-                                 <span class="age-search hidden">Укажите возраст ребёнка</span>
-                                 <select class="input" name="age" id="age">
+                                 <label for="age">Возраст</label><br>
+                                 <div class="main__form-search-field">
+                                    <span class="main__form-search-age">Укажите возраст ребёнка</span>
+                                    <span class="arrow-down"><img src="./img/select-arrow-down.svg"
+                                          alt="select arrow down"></span>
+                                    <span class="arrow-up hidden"><img src="./img/select-arrow-up.svg"
+                                          alt="select arrow up"></span>
+                                 </div>
+                                 <!-- <span class="age-search hidden">Укажите возраст ребёнка</span> -->
+                                 <select class="input hidden" name="age" id="age">
                                     <option value="">Укажите возраст ребёнка</option>
                                     <option value="0-3">0-3 года</option>
                                     <option value="4-6">4-6 лет</option>
@@ -240,11 +260,11 @@
                                     <option value="11-14">11-14 лет</option>
                                     <option value="15-17">15-17 лет</option>
                                  </select>
-                                 <img class="select-arrow" id="select-age__arrow" src="./img/select-arrow.svg"
-                                    alt="select-arrow">
+                                 <!-- <img class="select-arrow" id="select-age__arrow" src="./img/select-arrow.svg"
+                                    alt="select-arrow"> -->
                               </li>
                               <li class="main__form-item">
-                                 <label for=" name">Имя</label><br>
+                                 <label for="name">Имя</label><br>
                                  <input class="input" type="text" placeholder="Поиск по имени">
                               </li>
                               <li class="main__form-item">
