@@ -1,0 +1,27 @@
+.section-main__form-table {
+   /* width: 1170px; */
+   width: 100%;
+   padding: 30px;
+   margin-top: 40px;
+}
+
+.main__form-item {
+   /* display: inline-block; */
+   display: inline;
+   /* grid-area: form-item; */
+   /* width: 33%; */
+}
+
+.main__form-list {
+   /* display: contents; */
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   align-items: end;
+   grid-template-rows: 100px;
+   gap: 45px;
+}
+
+.section-main__form-img {
+   margin-bottom: -86px;
+   justify-self: center;
+}

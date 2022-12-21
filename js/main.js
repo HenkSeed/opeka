@@ -39,7 +39,7 @@ mainFormSearchFields.forEach((field) => {
 
 headerMenuLinks.forEach((link) => {
 	link.addEventListener('click', (event) => {
-		event.preventDefault();
+		// event.preventDefault();
 		// const ID = event.target.getAttribute('href').substring(1);
 		const headerLink = event.target.getAttribute('data-header-menu');
 		console.log('headerLink: ', headerLink);

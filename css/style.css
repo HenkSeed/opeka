@@ -377,11 +377,11 @@ body {
 .section-main__aside {
    display: flex;
    flex-direction: column;
-   /* margin-left: 60px; */
+   margin-left: 60px;
    /* when no order */
-   margin-right: 60px;
+   /* margin-right: 60px; */
    padding-top: 40px;
-   order: -1;
+   /* order: -1; */
    /* Added */
 }
 
@@ -685,6 +685,7 @@ body {
       margin-right: 0;
       align-items: center;
       flex-direction: column-reverse;
+      order: -1;
    }
 
    .section-main__aside-header {
