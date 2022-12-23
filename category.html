@@ -12,11 +12,17 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+   <script src="./js/swiper.js" defer></script>
    <script src="./js/main.js" defer></script>
+   <script src="./js/form.js" defer></script>
+
 </head>
 
 <body>
    <div class="body__wrapper">
+
 
       <div class="wrapper wrapper-header">
          <div class="container container__header">
@@ -77,11 +83,6 @@
                   </nav>
                   <div class="burger__icon">
                      <img src="./img/category/burger_icon.svg" alt="Burger-icon">
-                     <!-- <svg width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                           <path
-                              d="M28.5 24.5H15.2143C14.3863 24.5 13.7143 25.172 13.7143 26C13.7143 26.828 14.3863 27.5 15.2143 27.5H28.5C29.328 27.5 30 26.828 30 25.9999C30 25.172 29.328 24.5 28.5 24.5ZM1.5 3.49996H28.5C29.328 3.49996 30 2.82799 30 1.99995C30 1.17192 29.328 0.499954 28.5 0.499954H1.5C0.67201 0.500003 0 1.17196 0 2C0 2.82799 0.67201 3.49996 1.5 3.49996ZM28.5 12.5H8.14286C7.31487 12.5 6.64286 13.172 6.64286 14C6.64286 14.828 7.31487 15.5 8.14286 15.5H28.5C29.328 15.5 30 14.828 30 14C30 13.172 29.328 12.5 28.5 12.5Z"
-                              fill="#3E4757" />
-                        </svg> -->
                   </div>
                </div>
                <!-- /.header-wrapper -->
@@ -122,13 +123,12 @@
          </div>
       </div>
 
-      <div class="wrapper wrapper-main">
+      <div class="wrapper wrapper-main wrapper-main_category">
+         <img class="stars-01" src="./img/category/stars01.png" alt="Stars01 (Saturn)">
+         <img class="rocket-01" src="./img/category/rocket01.png" alt="Rocket01">
          <div class="container container__main">
-            <section class="section-main section">
+            <section class="section-main_category section">
                <div class="section-main__form">
-                  <!-- <div class="section-main__form-img">
-                     <img src="./img/category/children.png" alt="children" class="section-main__children">
-                  </div> -->
                   <div class="section-main__form-table">
                      <form action="#" method="get">
                         <fieldset class="main__form-fieldset">
@@ -294,44 +294,156 @@
 
             <section class="cards section">
 
-               <div class="cards-container">
-                  <div class="card child02">
+               <div class="swiper-container childrens-slider">
+                  <div class="swiper-wrapper">
+
+                     <div class="swiper-slide">
+                        <div class="swiper-slide__block">
+                           <div class="cards-container">
+                              <!-- Slides -->
+                              <div class="slide-item">
+                                 <img src="./img/category/children/child01.png" alt="child01">
+                              </div>
+                              <div class="slide-item">
+                                 <img src="./img/category/children/child02.png" alt="child02">
+                              </div>
+                              <div class="slide-item">
+                                 <img src="./img/category/children/child03.png" alt="child03">
+                              </div>
+                              <div class="slide-item">
+                                 <img src="./img/category/children/child04.png" alt="child04">
+                              </div>
+                              <div class="slide-item">
+                                 <img src="./img/category/children/child05.png" alt="child05">
+                              </div>
+                              <div class="slide-item">
+                                 <img src="./img/category/children/child06.png" alt="child06">
+                              </div>
+                              <div class="slide-item">
+                                 <img src="./img/category/children/child07.png" alt="child07">
+                              </div>
+                              <div class="slide-item">
+                                 <img src="./img/category/children/child08.png" alt="child08">
+                              </div>
+                              <div class="slide-item">
+                                 <img src="./img/category/children/child09.png" alt="child09">
+                              </div>
+                              <div class="slide-item">
+                                 <img src="./img/category/children/child10.png" alt="child10">
+                              </div>
+                              <div class="slide-item">
+                                 <img src="./img/category/children/child11.png" alt="child11">
+                              </div>
+                              <div class="slide-item">
+                                 <img src="./img/category/children/child12.png" alt="child12">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <div class="swiper-slide">
+                        <div class="swiper-slide__block">
+                           <div class="cards-container">
+                              <!-- Slides -->
+                              <div class="slide-item">
+                                 <img src="./img/category/children/child01.png" alt="child01">
+                              </div>
+                              <div class="slide-item">
+                                 <img src="./img/category/children/child02.png" alt="child02">
+                              </div>
+                              <div class="slide-item">
+                                 <img src="./img/category/children/child03.png" alt="child03">
+                              </div>
+                              <div class="slide-item">
+                                 <img src="./img/category/children/child04.png" alt="child04">
+                              </div>
+                              <div class="slide-item">
+                                 <img src="./img/category/children/child05.png" alt="child05">
+                              </div>
+                              <div class="slide-item">
+                                 <img src="./img/category/children/child06.png" alt="child06">
+                              </div>
+                              <div class="slide-item">
+                                 <img src="./img/category/children/child07.png" alt="child07">
+                              </div>
+                              <div class="slide-item">
+                                 <img src="./img/category/children/child08.png" alt="child08">
+                              </div>
+                              <div class="slide-item">
+                                 <img src="./img/category/children/child09.png" alt="child09">
+                              </div>
+                              <div class="slide-item">
+                                 <img src="./img/category/children/child10.png" alt="child10">
+                              </div>
+                              <div class="slide-item">
+                                 <img src="./img/category/children/child11.png" alt="child11">
+                              </div>
+                              <div class="slide-item">
+                                 <img src="./img/category/children/child12.png" alt="child12">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="swiper-pagination"></div>
+                  <!-- /.swiper-wrapper -->
+               </div>
+               <!-- /.swiper-container -->
+
+               <!-- ==================================================== -->
+               <!-- Slider main container -->
+               <!-- <div class="swiper"> -->
+               <!-- If we need pagination -->
+               <!-- <div class="swiper-pagination"></div> -->
+
+               <!-- If we need navigation buttons -->
+               <!-- <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div> -->
+
+               <!-- If we need scrollbar -->
+               <!-- <div class="swiper-scrollbar"></div> -->
+               <!-- </div> -->
+               <!-- ----------------------------------------------- -->
+
+               <!-- <div class="cards-container">
+                  <div class="card child01">
                      <img src="./img/category/children/child01.png" alt="child01">
                   </div>
-                  <div class="card child03">
+                  <div class="card child02">
                      <img src="./img/category/children/child02.png" alt="child02">
                   </div>
-                  <div class="card child04">
+                  <div class="card child03">
                      <img src="./img/category/children/child03.png" alt="child03">
                   </div>
-                  <div class="card child05">
+                  <div class="card child04">
                      <img src="./img/category/children/child04.png" alt="child04">
                   </div>
-                  <div class="card child06">
+                  <div class="card child05">
                      <img src="./img/category/children/child05.png" alt="child05">
                   </div>
-                  <div class="card child07">
+                  <div class="card child06">
                      <img src="./img/category/children/child06.png" alt="child06">
                   </div>
-                  <div class="card child08">
+                  <div class="card child07">
                      <img src="./img/category/children/child07.png" alt="child07">
                   </div>
-                  <div class="card child09">
+                  <div class="card child08">
                      <img src="./img/category/children/child08.png" alt="child08">
                   </div>
-                  <div class="card child10">
+                  <div class="card child9">
                      <img src="./img/category/children/child09.png" alt="child09">
                   </div>
-                  <div class="card child11">
+                  <div class="card child10">
                      <img src="./img/category/children/child10.png" alt="child10">
                   </div>
-                  <div class="card child01">
+                  <div class="card child11">
                      <img src="./img/category/children/child11.png" alt="child11">
                   </div>
                   <div class="card child01">
                      <img src="./img/category/children/child12.png" alt="child12">
                   </div>
-               </div>
+               </div> -->
             </section>
             <!-- /.fund -->
          </div>

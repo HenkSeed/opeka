@@ -1,19 +1,5 @@
-﻿const regionSearch = document.querySelector('.region-search');
-const sexSearch = document.querySelector('.sex-search');
-const ageSearch = document.querySelector('.age-search');
-const selectArrow = document.querySelector('.select-arrow');
-// ---------------------------------------------------
-
-const mainFormSearchFields = document.querySelectorAll(
-	'.main__form-search-field'
-);
-const idRegion = document.getElementById('region');
-// const arrowDown = document.querySelector('.arrow-down');
+﻿// const arrowDown = document.querySelector('.arrow-down');
 // const arrowUp = document.querySelector('.arrow-up');
-
-const selectRegionArrow = document.getElementById('select-region__arrow');
-const selectSexArrow = document.getElementById('select-sex__arrow');
-const selectAgeArrow = document.getElementById('select-age__arrow');
 
 const burgerIcon = document.querySelector('.burger__icon');
 const modalBurgerMenu = document.querySelector('.modal__burger_menu');
@@ -23,19 +9,6 @@ const burgerCloseIcon = document.querySelector('.burger__close-icon');
 const aboutFund = document.getElementById('about_fund');
 const headerMenuLinks = document.querySelectorAll('.header-menu__link');
 const wrapperDropdown = document.querySelector('.wrapper-dropdown');
-
-mainFormSearchFields.forEach((field) => {
-	const arrowDown = field.querySelector('.arrow-down');
-	const arrowUp = field.querySelector('.arrow-up');
-	field.addEventListener('click', (event) => {
-		console.log(event.currentTarget);
-		arrowDown.classList.toggle('hidden');
-		arrowUp.classList.toggle('hidden');
-		idRegion.classList.toggle('hidden');
-
-		// activateSearchField();
-	});
-});
 
 headerMenuLinks.forEach((link) => {
 	link.addEventListener('click', (event) => {
@@ -86,17 +59,17 @@ document.addEventListener('click', (event) => {
 	}
 });
 
-const toggleSearch = function () {
-	regionSearch.classList.toggle('hidden');
-};
+// const toggleSearch = function () {
+// 	regionSearch.classList.toggle('hidden');
+// };
 
-const toggleSexArrow = function () {
-	sexSearch.classList.toggle('hidden');
-};
+// const toggleSexArrow = function () {
+// 	sexSearch.classList.toggle('hidden');
+// };
 
-const toggleAgeArrow = function () {
-	ageSearch.classList.toggle('hidden');
-};
+// const toggleAgeArrow = function () {
+// 	ageSearch.classList.toggle('hidden');
+// };
 
 const openModal = function () {
 	// modalBurgerMenu.classList.remove('appear-left__burger');
@@ -139,14 +112,6 @@ burgerCloseIcon.addEventListener('click', (event) => {
 	// Разрешаем прокрутку документа
 	document.body.style.overflow = '';
 });
-
-// Этот блок блокирует работу клика по иконке бургер-меню !!!!!
-// ==============================================================
-regionSearch.addEventListener('click', toggleSearch);
-selectArrow.addEventListener('click', toggleSearch);
-selectSexArrow.addEventListener('click', toggleSexArrow);
-selectAgeArrow.addEventListener('click', toggleAgeArrow);
-// --------------------------------------------------------------
 
 // burgerIcon.addEventListener('click', openModal);
 // burgerCloseIcon.addEventListener('click', closeModal);
