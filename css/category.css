@@ -67,11 +67,57 @@
 .card {
    max-width: 355px;
    max-height: 355px;
-   /* margin-bottom: 50px; */
+   position: relative;
+}
+
+.card-info {
+   position: absolute;
+   bottom: 20px;
+   left: 20px;
 }
 
 .card img {
    width: 100%;
+}
+
+.surname,
+.birthdate,
+.region {
+   font-family: 'Neucha';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 20px;
+   color: #FFFFFF;
+}
+
+.birthdate {
+   display: inline-block;
+   margin-top: -4px;
+}
+
+.surname {
+   display: flex;
+   align-items: center;
+   font-size: 24px;
+   line-height: 26px;
+}
+
+.region {
+   line-height: 26px;
+}
+
+/* .surname span {
+   vertical-align: center;
+} */
+
+.sex-sign {
+   display: inline-block;
+}
+
+.sex-sign>img {
+   width: 40px;
+   height: 40px;
 }
 
 .swiper {
