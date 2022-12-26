@@ -1,0 +1,52 @@
+.card__wrapper-main {
+   padding-top: 100px;
+}
+
+.main__text-block {
+   font-family: 'Neucha';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 26px;
+
+   color: #3E4757;
+}
+
+.main__text-block p:not(:last-child) {
+   margin-bottom: 30px;
+}
+
+.main__text-block span {
+   color: #A2C53A;
+}
+
+.main__image-block {
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   /* justify-content: space-between; */
+   justify-content: space-around;
+   /* overflow: hidden; */
+}
+
+.card {
+   max-width: 355px;
+   max-height: 355px;
+   position: relative;
+   margin-bottom: 50px;
+}
+
+.card-info {
+   position: absolute;
+   bottom: 11px;
+   left: 20px;
+}
+
+.image-date {
+   font-family: 'Neucha';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 20px;
+   color: #FFFFFF;
+}

@@ -68,6 +68,7 @@
    max-width: 355px;
    max-height: 355px;
    position: relative;
+   margin-bottom: 50px;
 }
 
 .card-info {
@@ -88,6 +89,9 @@
    font-weight: 400;
    font-size: 18px;
    line-height: 20px;
+   /* identical to box height */
+
+
    color: #FFFFFF;
 }
 
@@ -107,10 +111,6 @@
    line-height: 26px;
 }
 
-/* .surname span {
-   vertical-align: center;
-} */
-
 .sex-sign {
    display: inline-block;
 }
@@ -124,18 +124,14 @@
    width: 100%;
 }
 
-/* .swiper-wrapper {
-   margin-bottom: 50px;
-} */
-
 .swiper-slide {
    margin-bottom: 100px;
 }
 
-.slide-item {
+/* .slide-item {
    margin-bottom: 50px;
    max-width: 355px;
-}
+} */
 
 .slide-item img {
    width: 100%;
