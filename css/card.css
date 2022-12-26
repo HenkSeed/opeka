@@ -1,5 +1,51 @@
 .card__wrapper-main {
-   padding-top: 100px;
+   padding-top: calc(100px + 50px);
+}
+
+.video-block__header {
+   display: flex;
+   justify-content: space-between;
+   /* align-items: center; */
+   font-family: 'Neucha';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 64px;
+   line-height: 70px;
+   /* text-align: center; */
+   color: #3E4757;
+   margin-bottom: 50px;
+}
+
+.link-block {
+   background: #E5EFF7;
+   box-shadow: 0px 4px 0px #D0EAFF;
+   border-radius: 5px;
+   padding: 0px 19px 0px 24px;
+   cursor: pointer;
+}
+
+.link-block span {
+   font-family: 'Neucha';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 26px;
+   color: #3E4757;
+   vertical-align: middle;
+}
+
+.share {
+   width: 30px;
+   height: 30px;
+   margin-right: 23px;
+   vertical-align: middle;
+}
+
+.sex-sign {
+   width: 65px;
+   height: 64px;
+   margin-left: 25px;
+   vertical-align: middle;
 }
 
 .main__text-block {
