@@ -5,8 +5,10 @@ new Swiper('.childrens-slider', {
 	},
 	slidesPerView: 1,
 	loop: true,
-	freeMode: true,
+	freeMode: false,
 });
+
+new Swiper('.card__video-slider');
 
 // const swiper = new Swiper('.swiper', {
 // 	// Optional parameters

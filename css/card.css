@@ -136,6 +136,7 @@
 }
 
 .video-block__slider {
+   /* min-width: 0; */
    max-width: 790px;
    width: calc((100vw - 30px));
    display: flex;

@@ -7,14 +7,12 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
    <title>Opeka</title>
    <link rel="stylesheet" href="./css/normalize.min.css" />
+   <link rel="stylesheet" href="./css/style.css" />
+   <link rel="stylesheet" href="./css/requisites.css" />
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-   <link rel="stylesheet" href="./css/style.css" />
-   <link rel="stylesheet" href="./css/card.css" />
-   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
-   <script src="./js/swiper.js" defer></script>
+   <!-- <script src="./js/swiper.js" defer></script> -->
    <script src="./js/main.js" defer></script>
    <script src="./js/form.js" defer></script>
 </head>
@@ -29,6 +27,10 @@
                   <a href="index.html" class="logo">
                      <img src="./img/category/logo-tmp.svg" alt="Logo">
                   </a>
+                  <!-- <div class="logo"> -->
+                  <!-- <img src="./img/main/logo-tmp.svg" alt="Logo"> -->
+                  <!-- <img src="./img/orange_heart.svg" alt="Orange heart"> -->
+                  <!-- </div> -->
                   <nav class="nav-menu">
                      <ul class="header-menu">
                         <li class="header-menu__item" id="aboutFund">
@@ -52,7 +54,7 @@
                            </a>
                         </li>
                         <li class="header-menu__item" id="details">
-                           <a href="requisites.html" class="header-menu__link" data-header-menu="details">
+                           <a href="#details" class="header-menu__link" data-header-menu="details">
                               Реквизиты
                            </a>
                         </li>
@@ -117,136 +119,53 @@
          </div>
       </div>
 
-      <div class="wrapper card__wrapper-main">
+      <div class="wrapper wrapper-main">
          <div class="container container__main">
-            <div class="main__video-block">
-               <div class="video-block__header">
-                  <div class="name-block">
-                     <p><span>Никонор С.</span><img class="sex-sign" src="./img/cards/male.png" alt="mail-sign">
+            <section class="section-main section">
+               <div class="section-main__hero">
+                  <div class="section-main__hero-info">
+                     <div class="section-main__hero-img">
+                        <img src="./img/requisites/main-image.png" alt="Group of people image">
+                     </div>
+                     <h2 class="section-main__hero-header">Реквизиты</h2>
+                     <p class="section-main__hero-text">Каждый ребёнок должен жить в семье!</p>
+                     <p class="section-main__hero-text">И если не получилось сохранить кровную
+                        семью, мы помогаем найти приёмную.</p>
+                     <p class="section-main__hero-text">Проект <a href="index.html">«Территория без сирот»</a> помогает
+                        детям-сиротам и детям, оставшимся без попечения родителей уже более 15 лет, и работает благодаря
+                        волонтёрам .</p>
+                     <p class="section-main__hero-text">Нашей команде нужны профессиональные фотографы, видеооператоры ,
+                        водители (со своим транспортом), волонтёры-текстовики, готовые писать небольшие рассказы о
+                        детях.
+                     </p>
+                     <p class="section-main__hero-text">Если вы профессиональный оператор или фотограф, готовы
+                        эпизодически отправиться в командировку на 2-3 будних дня - пишите на почту <a
+                           href="sve-davidova@yandex.ru">sve-davidova@yandex.ru</a>
+                     </p>
+                     <p class="section-main__hero-text">Также можно внести свой посильный вклад для оплаты
+                        командировочных расходов наших волонтеров. В назначении платежа необходимо указать «Территория
+                        без сирот»
                      </p>
                   </div>
-                  <div class="link-block">
-                     <p><img class="share" src="./img/cards/share.png" alt="share"><span>поделиться
-                           анкетой</span></p>
+               </div>
+            </section>
+            <!-- /.section-main -->
+
+            <section class="section-donate section">
+
+               <div class="section-donate__banner">
+                  <div class="section-donate__banner-text">
+                     <p>Хотите внести свой вклад?</p>
+                     <p>Мы это очень ценим!</p>
+                     <p>Просто нажмите на баннер.</p>
+                  </div>
+                  <div class="section-donate__banner-img">
+                     <img src="./img/requisites/banner-image.png" alt="banner-image">
                   </div>
                </div>
 
-               <div class="video-block__body">
-                  <div class="video-block__info-unit">
-
-                     <div class="video-block__info video-block__region">
-                        <img src="./img/cards/region.svg" alt="region-img">
-                        <div class="region__text-block video__text-block">
-                           <span>Регион:</span><br>
-                           <span>Еврейская автономная область</span>
-                        </div>
-                     </div>
-
-                     <div class="video-block__info video-block__birthdate">
-                        <img src="./img/cards/birthdate.svg" alt="">
-                        <div class="birthdate__text-block video__text-block">
-                           <span>Дата рождения:</span><br>
-                           <span>сентябрь 2013 (10 лет 11 мес.)</span>
-                        </div>
-                     </div>
-
-                     <div class="video-block__info video-block__worksheet">
-                        <img src="./img/cards/worksheet.svg" alt="worksheet-img">
-                        <div class="worksheet__text-block video__text-block">
-                           <a href="#">
-                              <span>Анкета ребёнка </span><img class="click-info" src="./img/cards/click.svg"
-                                 alt="Click-image"><br>
-                              <span>в федеральной базе</span>
-                           </a>
-                        </div>
-                     </div>
-
-                     <div class="video-block__info video-block__relatives">
-                        <img src="./img/cards/relatives.png" alt="">
-                        <div class="relatives__text-block video__text-block">
-                           <span>Братья и сёстры:</span><br>
-                           <a href="#">
-                              <span>есть </span><img class="click-info" src="./img/cards/click.svg" alt="Click-image">
-                           </a>
-                        </div>
-                     </div>
-                  </div>
-
-                  <div class="video-block__slider">
-                     <iframe src="https://www.youtube.com/embed/WLI7khWDGMk" title="Ксения Б., июль 2018"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                     <!-- <iframe width="790" height="445" src="https://www.youtube.com/embed/WLI7khWDGMk"
-                        title="Ксения Б., июль 2018" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe> -->
-                  </div>
-               </div>
-            </div>
-            <!-- /.main__video-block -->
-
-            <div class="main__text-block">
-               <p><span>Куда обращаться:</span> Вопросы можно задавать на почту sve-davidova@yandex.ru или по телефону
-                  восемь-926-517-09-пятьдесят пять Светлана</p>
-               <p><span>Описание:</span> Никонор – очень симпатичный, улыбчивый мальчишка. Характер у него живой,
-                  непосредственный, он легко ведет диалог, охотно рассказывает о себе, о сестре, обо всем и всех вокруг.
-                  Никонор хорошо учится, обожает футбол и мечтает стать футболистом.</p>
-            </div>
-            <!-- /.main__text-block -->
-
-            <div class="main__image-block">
-               <div class="card card01__img01">
-                  <a href="card01.html">
-                     <img src="./img/cards/card01/photo01.png" alt="photo01">
-                  </a>
-                  <div class="card-info">
-                     <p class="image-date">май 2022 г.</p>
-                  </div>
-               </div>
-               <div class="card card01__img01">
-                  <a href="card01.html">
-                     <img src="./img/cards/card01/photo02.png" alt="photo02">
-                  </a>
-                  <div class="card-info">
-                     <p class="image-date">май 2022 г.</p>
-                  </div>
-               </div>
-               <div class="card card01__img01">
-                  <a href="card01.html">
-                     <img src="./img/cards/card01/photo03.png" alt="photo03">
-                  </a>
-                  <div class="card-info">
-                     <p class="image-date">май 2022 г.</p>
-                  </div>
-               </div>
-               <div class="card card01__img01">
-                  <a href="card01.html">
-                     <img src="./img/cards/card01/photo04.png" alt="photo04">
-                  </a>
-                  <div class="card-info">
-                     <p class="image-date">май 2022 г.</p>
-                  </div>
-               </div>
-               <div class="card card01__img01">
-                  <a href="card01.html">
-                     <img src="./img/cards/card01/photo05.png" alt="photo05">
-                  </a>
-                  <div class="card-info">
-                     <p class="image-date">май 2022 г.</p>
-                  </div>
-               </div>
-               <div class="card card01__img01">
-                  <a href="card01.html">
-                     <img src="./img/cards/card01/photo06.png" alt="photo06">
-                  </a>
-                  <div class="card-info">
-                     <p class="image-date">май 2022 г.</p>
-                  </div>
-               </div>
-            </div>
-            <!-- /.main__image-block -->
-
+            </section>
+            <!-- /.fund -->
          </div>
          <!-- /.container -->
       </div>
