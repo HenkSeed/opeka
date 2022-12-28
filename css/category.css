@@ -146,12 +146,6 @@
 }
 
 @media (max-width: 1125px) {
-   .cards-container {
-      justify-content: space-around;
-   }
-}
-
-@media (max-width: 1100px) {
    .section-main__form-table {
       /* width: 100%; */
       /* margin-top: 115px; */
@@ -173,6 +167,10 @@
 
    .main__form-fieldset legend {
       text-align: start;
+   }
+
+   .cards-container {
+      justify-content: space-around;
    }
 
 

@@ -668,7 +668,7 @@ body {
    /* list-style-type: none; */
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1125px) {
    .header-menu__item {
       margin-left: 1rem;
    }
