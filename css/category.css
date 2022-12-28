@@ -59,8 +59,8 @@
    width: 100%;
    display: flex;
    flex-wrap: wrap;
-   /* justify-content: space-between; */
-   justify-content: space-around;
+   justify-content: space-between;
+   /* justify-content: space-around; */
    /* overflow: hidden; */
 }
 
@@ -145,6 +145,12 @@
    bottom: 40px;
 }
 
+@media (max-width: 1125px) {
+   .cards-container {
+      justify-content: space-around;
+   }
+}
+
 @media (max-width: 1100px) {
    .section-main__form-table {
       /* width: 100%; */
@@ -169,9 +175,7 @@
       text-align: start;
    }
 
-   /* .legend {
-      text-align: start;
-   } */
+
 }
 
 @media (max-width: 750px) {
