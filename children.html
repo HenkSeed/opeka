@@ -7,12 +7,12 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
    <title>Opeka</title>
    <link rel="stylesheet" href="./css/normalize.min.css" />
-   <link rel="stylesheet" href="./css/style.css" />
-   <link rel="stylesheet" href="./css/category.css" />
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="./css/style.css" />
+   <link rel="stylesheet" href="./css/children.css" />
    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
    <script src="./js/swiper.js" defer></script>
    <script src="./js/main.js" defer></script>
@@ -28,7 +28,7 @@
          <div class="container container__header">
             <header class="header">
                <div class="header-wrapper">
-                  <a href="index.html" class="logo">
+                  <a href="./index.html" class="logo">
                      <img src="./img/category/logo-tmp.svg" alt="Logo">
                   </a>
                   <nav class="nav-menu">
@@ -44,22 +44,22 @@
                            </a>
                         </li>
                         <li class="header-menu__item" id="children">
-                           <a href="category.html" class="header-menu__link" data-header-menu="children">
+                           <a href="./children.html" class="header-menu__link" data-header-menu="children">
                               Дети
                            </a>
                         </li>
                         <li class=" header-menu__item" id="to_start">
-                           <a href="#to_start" class="header-menu__link" data-header-menu="to_start">
+                           <a href="./to_start.html" class="header-menu__link" data-header-menu="to_start">
                               Для тех, кто в начале пути
                            </a>
                         </li>
                         <li class="header-menu__item" id="details">
-                           <a href="requisites.html" class="header-menu__link" data-header-menu="details">
+                           <a href="./requisites.html" class="header-menu__link" data-header-menu="details">
                               Реквизиты
                            </a>
                         </li>
                         <li class="header-menu__item" id="contacts">
-                           <a href="contacts.html" class="header-menu__link" data-header-menu="contacts">
+                           <a href="./contacts.html" class="header-menu__link" data-header-menu="contacts">
                               Контакты
                            </a>
                         </li>
@@ -69,7 +69,7 @@
                            </a>
                         </li>
                         <li class="header-menu__item" id="news">
-                           <a href="news.html" class="header-menu__link" data-header-menu="news">
+                           <a href="./news.html" class="header-menu__link" data-header-menu="news">
                               Новости
                            </a>
                         </li>
@@ -615,45 +615,49 @@
                   <nav class="burger__nav-menu_modal">
                      <ul class="burger__menu_modal">
                         <li class="burger__menu__item_modal">
-                           <a href="#" class="header-menu__link_modal header-menu__link" data-header-menu="aboutFund">
+                           <a href="#aboutFund" class="header-menu__link_modal header-menu__link"
+                              data-header-menu="aboutFund">
                               О фонде
                            </a>
                         </li>
                         <li class="burger__menu__item_modal">
-                           <a href="" class="header-menu__link_modal header-menu__link" data-header-menu="aboutProject">
+                           <a href="#aboutProject" class="header-menu__link_modal header-menu__link"
+                              data-header-menu="aboutProject">
                               О проекте
                            </a>
                         </li>
                         <li class="burger__menu__item_modal">
-                           <a href="category.html" class="header-menu__link_modal header-menu__link"
+                           <a href="./children.html" class="header-menu__link_modal header-menu__link"
                               data-header-menu="children">
                               Дети
                            </a>
                         </li>
                         <li class="burger__menu__item_modal">
-                           <a href="" class="header-menu__link_modal header-menu__link" data-header-menu="to_start">
+                           <a href="./to_start.html" class="header-menu__link_modal header-menu__link"
+                              data-header-menu="to_start">
                               Для тех, кто в начале пути
                            </a>
                         </li>
                         <li class="burger__menu__item_modal">
-                           <a href="requisites.html" class="header-menu__link_modal header-menu__link"
+                           <a href="./requisites.html" class="header-menu__link_modal header-menu__link"
                               data-header-menu="details">
                               Реквизиты
                            </a>
                         </li>
                         <li class="burger__menu__item_modal">
-                           <a href="contacts.html" class="header-menu__link_modal header-menu__link"
+                           <a href="./contacts.html" class="header-menu__link_modal header-menu__link"
                               data-header-menu="contacts">
                               Контакты
                            </a>
                         </li>
                         <li class="burger__menu__item_modal">
-                           <a href="" class="header-menu__link_modal header-menu__link" data-header-menu="reviews">
+                           <a href="#reviews" class="header-menu__link_modal header-menu__link"
+                              data-header-menu="reviews">
                               Отзывы
                            </a>
                         </li>
                         <li class="burger__menu__item_modal">
-                           <a href="news.html" class="header-menu__link_modal header-menu__link"
+                           <a href="./news.html" class="header-menu__link_modal header-menu__link"
                               data-header-menu="news">
                               Новости
                            </a>

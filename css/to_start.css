@@ -1,0 +1,48 @@
+.wrapper__to_start {
+   padding-top: 95px;
+   padding-bottom: 120px;
+}
+
+.to_start__story_block {
+   max-width: 1170px;
+}
+
+.to_start__story_block:not(:last-child) {
+   margin-bottom: 105px;
+}
+
+.to_start__heading {
+   color: #3E4757;
+   font-size: 64px;
+   font-family: Neucha;
+   max-width: 934px;
+   margin-top: 41px;
+   margin-bottom: 65px;
+}
+
+.story_header {
+   display: inline-block;
+   padding: 5px 6px 0 6px;
+   border-radius: 5px;
+   color: #3E4757;
+   font-size: 36px;
+   font-family: Neucha;
+   margin-bottom: 15px;
+   background-color: #DDE9B5;
+}
+
+.story_text {
+   color: #3E4757;
+   font-size: 24px;
+   font-family: Neucha;
+   margin-bottom: 10px;
+}
+
+.to_start__video {
+   width: 100%;
+}
+
+.video_axpect-ratio {
+   aspect-ratio: 16 / 9;
+   width: 100%;
+}
