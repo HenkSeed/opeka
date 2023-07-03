@@ -7,7 +7,8 @@
 
 .reviews__heading {
    color: #3E4757;
-   font-size: 64px;
+   /* font-size: 64px; */
+   font-size: calc(42px + (64 - 42) * ((100vw - 320px) / (1200 - 320)));
    font-family: Neucha;
    font-weight: normal;
    /* margin-top: 41px; */
