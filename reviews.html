@@ -10,11 +10,13 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="./css/normalize.min.css" />
+   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" /> -->
    <link rel="stylesheet" href="./css/style.css" />
-   <link rel="stylesheet" href="./css/reviews.css" />
-   <!-- <script src="./js/swiper.js" defer></script> -->
+   <!-- <link rel="stylesheet" href="./css/reviews.css" /> -->
+   <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script> -->
    <script src="./js/main.js" defer></script>
    <script src="./js/form.js" defer></script>
+   <script src="./js/reviews.js" defer></script>
 </head>
 
 <body>
@@ -127,9 +129,22 @@
             <div class="reviews__stories section">
 
                <div class="review">
-                  <div class="review__slider">
-                     <img class="review__slider_img" src="./img/reviews/photo1-1.png" alt="Slider1 photo1">
+
+                  <div class="review__slider swiper">
+                     <!-- <div class="swiper"> -->
+                     <div class="swiper-wrapper">
+                        <img class="review__slider_img slide-item" src="./img/reviews/photo1-1.png"
+                           alt="Slider1 photo1">
+                        <!-- <img class="review__slider_img slide-item" src="./img/reviews/photo2-1.png"
+                           alt="Slider1 photo1">
+                        <img class="review__slider_img slide-item" src="./img/reviews/photo3-1.png"
+                           alt="Slider1 photo1">
+                        <img class="review__slider_img slide-item" src="./img/reviews/photo4-1.png"
+                           alt="Slider1 photo1"> -->
+                     </div>
+                     <div class="swiper-pagination"></div>
                   </div>
+
                   <div class="review__info">
                      <div class="review__icon_block review__icon_block_video">
                         <img class="review__icon_quotation" src="./img/reviews/icon_quotation.svg" alt="">
@@ -161,7 +176,7 @@
 
                <div class="review">
                   <div class="review__slider">
-                     <img class="review__slider_img" src="./img/reviews/photo2-1.png" alt="Slider2 photo1">
+                     <img class="review__slider_img visible" src="./img/reviews/photo2-1.png" alt="Slider2 photo1">
                   </div>
                   <div class="review__info">
                      <div class="review__icon_block review__icon_block_video">
@@ -189,7 +204,7 @@
 
                <div class="review">
                   <div class="review__slider">
-                     <img class="review__slider_img" src="./img/reviews/photo3-1.png" alt="Slider3 photo1">
+                     <img class="review__slider_img visible" src="./img/reviews/photo3-1.png" alt="Slider3 photo1">
                   </div>
                   <div class="review__info">
                      <div class="review__icon_block review__icon_block_video">
@@ -209,7 +224,7 @@
 
                <div class="review">
                   <div class="review__slider">
-                     <img class="review__slider_img" src="./img/reviews/photo4-1.png" alt="Slider4 photo1">
+                     <img class="review__slider_img visible" src="./img/reviews/photo4-1.png" alt="Slider4 photo1">
                   </div>
                   <div class="review__info">
                      <div class="review__icon_block review__icon_block_video">
