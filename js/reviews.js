@@ -6,10 +6,12 @@ const swiper = new Swiper('.swiper', {
 
 	// If we need pagination
 	pagination: {
-		el: '.swiper-pagination',
+		el: '.swiper-pagination-review',
 		clickable: true,
+		// dynamicBullets: true,
 	},
 
+	grabCursor: true,
 	// Navigation arrows
 	// navigation: {
 	// 	nextEl: '.swiper-button-next',

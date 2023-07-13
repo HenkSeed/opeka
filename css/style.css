@@ -11,6 +11,17 @@
   padding-bottom: calc(55px + 95 * (100vw - 320px) / 880);
 }
 
+.swiper-horizontal > .swiper-pagination-bullets {
+  bottom: 10px;
+}
+
+.swiper-pagination-review > .swiper-pagination-bullet {
+  top: 100px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgb(221, 233, 180);
+}
+
 .reviews__heading {
   color: #3e4757;
   font-size: calc(42px + 22 * (100vw - 320px) / 880);
