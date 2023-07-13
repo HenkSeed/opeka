@@ -10,10 +10,10 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="./css/normalize.min.css" />
-   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" /> -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
    <link rel="stylesheet" href="./css/style.css" />
    <!-- <link rel="stylesheet" href="./css/reviews.css" /> -->
-   <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script> -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>
    <script src="./js/main.js" defer></script>
    <script src="./js/form.js" defer></script>
    <script src="./js/reviews.js" defer></script>
@@ -130,19 +130,33 @@
 
                <div class="review">
 
-                  <div class="review__slider swiper">
-                     <!-- <div class="swiper"> -->
-                     <div class="swiper-wrapper">
-                        <img class="review__slider_img slide-item" src="./img/reviews/photo1-1.png"
-                           alt="Slider1 photo1">
-                        <!-- <img class="review__slider_img slide-item" src="./img/reviews/photo2-1.png"
-                           alt="Slider1 photo1">
-                        <img class="review__slider_img slide-item" src="./img/reviews/photo3-1.png"
-                           alt="Slider1 photo1">
-                        <img class="review__slider_img slide-item" src="./img/reviews/photo4-1.png"
-                           alt="Slider1 photo1"> -->
+                  <div class="review__slider">
+
+                     <div class="swiper">
+                        <div class="swiper-wrapper">
+
+                           <div class="swiper-slide">
+                              <img class="review__slider_img slide-item" src="./img/reviews/photo1-1.png"
+                                 alt="Slider1 photo1">
+                           </div>
+
+                           <div class="swiper-slide">
+                              <img class="review__slider_img slide-item" src="./img/reviews/photo2-1.png"
+                                 alt="Slider1 photo1">
+                           </div>
+
+                           <div class="swiper-slide">
+                              <img class="review__slider_img slide-item" src="./img/reviews/photo3-1.png"
+                                 alt="Slider1 photo1">
+                           </div>
+
+                           <div class="swiper-slide">
+                              <img class="review__slider_img slide-item" src="./img/reviews/photo4-1.png"
+                                 alt="Slider1 photo1">
+                           </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
                      </div>
-                     <div class="swiper-pagination"></div>
                   </div>
 
                   <div class="review__info">
@@ -172,6 +186,7 @@
                         <p class="review__author_name">- Лариса Монахова</p>
                      </div>
                   </div>
+
                </div>
 
                <div class="review">

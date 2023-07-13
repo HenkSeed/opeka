@@ -29,21 +29,9 @@
    gap: 70px;
    &__slider {
       grid-column: 1;
-      // position: relative;
       &_img {
          width: 100%;
          height: 100%;
-         // object-fit: cover;
-
-         // display: none;
-         // opacity: 0;
-         // position: absolute;
-         // left: 0;
-         // top: 0;
-         // transition: opacity 0.5s ease;
-         // &:hover {
-         //    opacity: 0;
-         // }
       }
    }
    &__info {
