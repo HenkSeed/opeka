@@ -9,27 +9,19 @@
    position: relative;
 }
 
-.swiper-pagination-review {
-   // border: 1px solid #00f;
-   height: 20px;
-   display: flex;
-   justify-content: center;
-   // position: relative;
-   // overflow-y: visible;
-   // position: relative;
-   // top: 200px;
-   bottom: 30px;
-   // overflow: visible;
-}
+// Вроде, работает и без него
+// .swiper-pagination-review {
+//    height: 20px;
+//    display: flex;
+//    justify-content: center;
+//    bottom: 30px;
+// }
 
 // Важный блок для позиционирования пагинации
 .swiper-pagination-review > .swiper-pagination-bullet {
    opacity: 1;
    position: relative;
-   // top: -10px;
-   // bottom: var(--swiper-pagination-bottom, 28px);
-   // bottom: -50px;
-   top: 47px;
+   top: 34px;
 
    width: 16px;
    height: 16px;
@@ -39,12 +31,8 @@
 
 // Важный блок для позиционирования пагинации
 .swiper-pagination-review > .swiper-pagination-bullet-active {
-   // width: 16px;
-   // height: 16px;
-   // // border: 5px solid #000;
-   // border: 2px solid rgba(255, 0, 0, 1);
-   // line-height: 16;
-   background-color: rgba(255, 0, 0, 1);
+   border: 2px solid #dde9b5;
+   background: #dde9b5;
 }
 
 .reviews {
@@ -253,6 +241,12 @@
    .review__info {
       grid-column: 1;
       grid-row: 2;
+      padding-top: 40px;
+   }
+
+   .swiper-pagination-review > .swiper-pagination-bullet-active {
+      border: 2px solid #fff;
+      background: #dde9b5;
    }
 }
 
