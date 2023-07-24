@@ -12,105 +12,803 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Neucha&family=Open+Sans&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="./css/style.css" />
-   <link rel="stylesheet" href="./css/news.css" />
+   <!-- <link rel="stylesheet" href="./css/news.css" /> -->
    <!-- <script src="./js/swiper.js" defer></script> -->
    <script src="./js/main.js" defer></script>
    <script src="./js/form.js" defer></script>
+   <script src="./js/news.js" defer></script>
 </head>
 
 <body>
-   <div class="wrapper wrapper-header wrapper-header_news">
-      <div class="container container__header">
-         <header class="header">
-            <div class="header-wrapper">
-               <!-- <div class="logo"> -->
-               <!-- <img src="./img/category/logo-tmp.svg" alt="Logo"> -->
-               <!-- <img src="./img/orange_heart.svg" alt="Orange heart"> -->
-               <!-- </div> -->
-               <a href="./index.html" class="logo">
-                  <img src="./img/category/logo-tmp.svg" alt="Logo">
-               </a>
-               <nav class="nav-menu">
-                  <ul class="header-menu">
-                     <li class="header-menu__item" id="aboutFund">
-                        <a href="#aboutFund" class="header-menu__link" data-header-menu="aboutFund">
-                           О фонде
-                        </a>
-                     </li>
-                     <li class="header-menu__item" id="aboutProject">
-                        <a href="#aboutProject" class="header-menu__link" data-header-menu="aboutProject">
-                           О проекте
-                        </a>
-                     </li>
-                     <li class="header-menu__item" id="children">
-                        <a href="./children.html" class="header-menu__link" data-header-menu="children">
-                           Дети
-                        </a>
-                     </li>
-                     <li class=" header-menu__item" id="to_start">
-                        <a href="./to_start.html" class="header-menu__link" data-header-menu="to_start">
-                           Для тех, кто в начале пути
-                        </a>
-                     </li>
-                     <li class="header-menu__item" id="details">
-                        <a href="./requisites.html" class="header-menu__link" data-header-menu="details">
-                           Реквизиты
-                        </a>
-                     </li>
-                     <li class="header-menu__item" id="contacts">
-                        <a href="./contacts.html" class="header-menu__link" data-header-menu="contacts">
-                           Контакты
-                        </a>
-                     </li>
-                     <li class="header-menu__item" id="reviews">
-                        <a href="./reviews.html" class="header-menu__link" data-header-menu="reviews">
-                           Отзывы
-                        </a>
-                     </li>
-                     <li class="header-menu__item" id="news">
-                        <a href="./news.html" class="header-menu__link" data-header-menu="news">
-                           Новости
-                        </a>
-                     </li>
+   <div class="body__wrapper">
+      <div class="wrapper wrapper-header wrapper-header_news">
+         <div class="container container__header">
+            <header class="header">
+               <div class="header-wrapper">
+                  <!-- <div class="logo"> -->
+                  <!-- <img src="./img/category/logo-tmp.svg" alt="Logo"> -->
+                  <!-- <img src="./img/orange_heart.svg" alt="Orange heart"> -->
+                  <!-- </div> -->
+                  <a href="./index.html" class="logo">
+                     <img src="./img/category/logo-tmp.svg" alt="Logo">
+                  </a>
+                  <nav class="nav-menu">
+                     <ul class="header-menu">
+                        <li class="header-menu__item" id="aboutFund">
+                           <a href="#aboutFund" class="header-menu__link" data-header-menu="aboutFund">
+                              О фонде
+                           </a>
+                        </li>
+                        <li class="header-menu__item" id="aboutProject">
+                           <a href="#aboutProject" class="header-menu__link" data-header-menu="aboutProject">
+                              О проекте
+                           </a>
+                        </li>
+                        <li class="header-menu__item" id="children">
+                           <a href="./children.html" class="header-menu__link" data-header-menu="children">
+                              Дети
+                           </a>
+                        </li>
+                        <li class=" header-menu__item" id="to_start">
+                           <a href="./to_start.html" class="header-menu__link" data-header-menu="to_start">
+                              Для тех, кто в начале пути
+                           </a>
+                        </li>
+                        <li class="header-menu__item" id="details">
+                           <a href="./requisites.html" class="header-menu__link" data-header-menu="details">
+                              Реквизиты
+                           </a>
+                        </li>
+                        <li class="header-menu__item" id="contacts">
+                           <a href="./contacts.html" class="header-menu__link" data-header-menu="contacts">
+                              Контакты
+                           </a>
+                        </li>
+                        <li class="header-menu__item" id="reviews">
+                           <a href="./reviews.html" class="header-menu__link" data-header-menu="reviews">
+                              Отзывы
+                           </a>
+                        </li>
+                        <li class="header-menu__item" id="news">
+                           <a href="./news.html" class="header-menu__link" data-header-menu="news">
+                              Новости
+                           </a>
+                        </li>
 
 
-                  </ul>
-               </nav>
-               <div class="burger__icon">
-                  <img src="./img/category/burger_icon.svg" alt="Burger-icon">
+                     </ul>
+                  </nav>
+                  <div class="burger__icon">
+                     <img src="./img/category/burger_icon.svg" alt="Burger-icon">
+                  </div>
                </div>
-            </div>
-            <!-- /.header-wrapper -->
-         </header>
-         <!-- /.header -->
+               <!-- /.header-wrapper -->
+            </header>
+            <!-- /.header -->
+         </div>
+         <!-- /.container -->
       </div>
-      <!-- /.container -->
-   </div>
-   <!-- /.wrapper -->
+      <!-- /.wrapper -->
 
-   <div class="wrapper wrapper-slider">
-      <h1 class="news-header">CHILDREN</h1>
-
-      <div class="swiper-container childrens-slider">
-         <div class="swiper-wrapper">
-            <div class="swiper-slide">
-               <div class="swiper-slide__block">
-                  <img src="./img/category/children/child01.png" alt="">
-                  <img src="./img/category/children/child02.png" alt="">
-               </div>
-            </div>
-            <div class="swiper-slide">
-               <div class="swiper-slide__block">
-                  <img src="./img/category/children/child03.png" alt="">
-                  <img src="./img/category/children/child04.png" alt="">
-               </div>
+      <div class="wrapper-dropdown">
+         <div class="container container__dropdown">
+            <div class="dropdown">
+               <ul class="dropdown__menu">
+                  <li class="dropdown__item">
+                     <a href="" class="dropdown__link">Миссия и история</a>
+                     <div class="dropdown__link_image">
+                        <img src="./img/category/dropdown_circle.png" alt="Circle">
+                     </div>
+                  </li>
+                  <li class="dropdown__item">
+                     <a href="" class="dropdown__link">Пресс-центр</a>
+                     <div class="dropdown__link_image">
+                        <img src="./img/category/dropdown_circle.png" alt="Circle">
+                     </div>
+                  </li>
+                  <li class="dropdown__item">
+                     <a href="" class="dropdown__link">Документы</a>
+                     <div class="dropdown__link_image">
+                        <img src="./img/category/dropdown_circle.png" alt="Circle">
+                     </div>
+                  </li>
+                  <li class="dropdown__item">
+                     <a href="" class="dropdown__link">Друзья и партнёры</a>
+                  </li>
+               </ul>
             </div>
          </div>
-         <!-- /.swiper-wrapper -->
       </div>
-      <!-- /.swiper-container -->
+
+      <div class="wrapper main-news">
+         <div class="container container-main-news">
+            <div class="news">
+               <h1 class="news-header news-header_main">Новости</h1>
+               <div class="news-decoration__img"><img src="./img/news/joy_boy.png" alt="Joy Boy Image"></div>
+
+               <!-- СЛАЙДЕР ------------------------------>
+               <!-- <div class="swiper-container childrens-slider"> -->
+               <div class="swiper-news">
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide">
+                        <div class="swiper-slide__block">
+                           <div class="news-grid">
+                              <div class="news__item news__item-1">
+                                 <img src="./img/news/news_img.jpg" alt="News Photo" class="news__item_img">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-2">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-3">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-4">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-5">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-6">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-7">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-8">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-9">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-10">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-11">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-12">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-13">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-14">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-15">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <!-- <div class="news__item news__item-16">
+                                                            <h3 class="news__item_date">28.11.2022</h3>
+                                                            <a href="./news_01.html" class="news__item_link">
+                                                               <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                                                  «Секреты
+                                                                  усыновляющих фотографий»</p>
+                                                            </a>
+                                                         </div> -->
+                              <!-- <div class="news__item news__item-17">
+                                                            <h3 class="news__item_date">28.11.2022</h3>
+                                                            <a href="./news_01.html" class="news__item_link">
+                                                               <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                                                  «Секреты
+                                                                  усыновляющих фотографий»</p>
+                                                            </a>
+                                                         </div> -->
+                           </div>
+                           <!-- <img src="./img/category/children/child01.png" alt="">
+                        <img src="./img/category/children/child02.png" alt=""> -->
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="swiper-slide__block">
+                           <div class="news-grid">
+                              <div class="news__item news__item-1">
+                                 <img src="./img/news/news_img.jpg" alt="News Photo" class="news__item_img">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-2">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-3">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-4">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-5">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-6">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-7">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-8">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-9">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-10">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-11">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-12">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-13">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-14">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-15">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <!-- <div class="news__item news__item-16">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div> -->
+                              <!-- <div class="news__item news__item-17">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div> -->
+                           </div>
+                           <!-- <img src="./img/category/children/child03.png" alt="">
+                        <img src="./img/category/children/child04.png" alt=""> -->
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="swiper-slide__block">
+                           <div class="news-grid">
+                              <div class="news__item news__item-1">
+                                 <img src="./img/news/news_img.jpg" alt="News Photo" class="news__item_img">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-2">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-3">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-4">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-5">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-6">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-7">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-8">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-9">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-10">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-11">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-12">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-13">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-14">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-15">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <!-- <div class="news__item news__item-16">
+                                                                           <h3 class="news__item_date">28.11.2022</h3>
+                                                                           <a href="./news_01.html" class="news__item_link">
+                                                                              <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                                                                 «Секреты
+                                                                                 усыновляющих фотографий»</p>
+                                                                           </a>
+                                                                        </div> -->
+                              <!-- <div class="news__item news__item-17">
+                                                                           <h3 class="news__item_date">28.11.2022</h3>
+                                                                           <a href="./news_01.html" class="news__item_link">
+                                                                              <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                                                                 «Секреты
+                                                                                 усыновляющих фотографий»</p>
+                                                                           </a>
+                                                                        </div> -->
+                           </div>
+                           <!-- <img src="./img/category/children/child03.png" alt="">
+                                                                  <img src="./img/category/children/child04.png" alt=""> -->
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="swiper-slide__block">
+                           <div class="news-grid">
+                              <div class="news__item news__item-1">
+                                 <img src="./img/news/news_img.jpg" alt="News Photo" class="news__item_img">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-2">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-3">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-4">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-5">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-6">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-7">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-8">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-9">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-10">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-11">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-12">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-13">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-14">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <div class="news__item news__item-15">
+                                 <h3 class="news__item_date">28.11.2022</h3>
+                                 <a href="./news_01.html" class="news__item_link">
+                                    <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                       «Секреты
+                                       усыновляющих фотографий»</p>
+                                 </a>
+                              </div>
+                              <!-- <div class="news__item news__item-16">
+                                                                                                                     <h3 class="news__item_date">28.11.2022</h3>
+                                                                                                                     <a href="./news_01.html" class="news__item_link">
+                                                                                                                        <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                                                                                                           «Секреты
+                                                                                                                           усыновляющих фотографий»</p>
+                                                                                                                     </a>
+                                                                                                                  </div> -->
+                              <!-- <div class="news__item news__item-17">
+                                                                                                                     <h3 class="news__item_date">28.11.2022</h3>
+                                                                                                                     <a href="./news_01.html" class="news__item_link">
+                                                                                                                        <p class="news__item_text">В офисе фонда прошел семинар для волонтеров-фотографов
+                                                                                                                           «Секреты
+                                                                                                                           усыновляющих фотографий»</p>
+                                                                                                                     </a>
+                                                                                                                  </div> -->
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-pagination-news"></div>
+               </div>
+               <!-- /.swiper-container ------------------->
+
+            </div>
+
+         </div>
+
+      </div>
+
+      <div class="wrapper wrapper-footer">
+         <div class="container">
+            <footer class="footer section">
+               <div class="footer-copyright">
+                  Copyright © 2022. Территория без сирот. Все права защищены.
+               </div>
+            </footer>
+            <!-- /.footer -->
+         </div>
+         <!-- /.container -->
+      </div>
+      <!-- /.wrapper -->
+
+      <div class="modal__burger_menu fade-left__burger">
+
+         <div class="wrapper wrapper-modal__burger">
+            <div class="container  container_modal">
+               <div class="burger-modal">
+                  <div class="burger-wrapper_modal">
+                     <div class="logo">
+                        <img src="./img/main/logo-tmp.svg" alt="Logo">
+                        <!-- <img src="./img/orange_heart.svg" alt="Orange heart"> -->
+                     </div>
+                     <div class="burger__close-icon">
+                        <img src="./img/main/burger_close_icon.svg" alt="Burger Close icon">
+                     </div>
+                  </div>
+                  <!-- /.burger-wrapper_modal -->
+                  <nav class="burger__nav-menu_modal">
+                     <ul class="burger__menu_modal">
+                        <li class="burger__menu__item_modal">
+                           <a href="#aboutFund" class="header-menu__link_modal header-menu__link"
+                              data-header-menu="aboutFund">
+                              О фонде
+                           </a>
+                        </li>
+                        <li class="burger__menu__item_modal">
+                           <a href="#aboutProject" class="header-menu__link_modal header-menu__link"
+                              data-header-menu="aboutProject">
+                              О проекте
+                           </a>
+                        </li>
+                        <li class="burger__menu__item_modal">
+                           <a href="./children.html" class="header-menu__link_modal header-menu__link"
+                              data-header-menu="children">
+                              Дети
+                           </a>
+                        </li>
+                        <li class="burger__menu__item_modal">
+                           <a href="./to_start.html" class="header-menu__link_modal header-menu__link"
+                              data-header-menu="to_start">
+                              Для тех, кто в начале пути
+                           </a>
+                        </li>
+                        <li class="burger__menu__item_modal">
+                           <a href="./requisites.html" class="header-menu__link_modal header-menu__link"
+                              data-header-menu="details">
+                              Реквизиты
+                           </a>
+                        </li>
+                        <li class="burger__menu__item_modal">
+                           <a href="./contacts.html" class="header-menu__link_modal header-menu__link"
+                              data-header-menu="contacts">
+                              Контакты
+                           </a>
+                        </li>
+                        <li class="burger__menu__item_modal">
+                           <a href="./reviews.html" class="header-menu__link_modal header-menu__link"
+                              data-header-menu="reviews">
+                              Отзывы
+                           </a>
+                        </li>
+                        <li class="burger__menu__item_modal">
+                           <a href="./news.html" class="header-menu__link_modal header-menu__link"
+                              data-header-menu="news">
+                              Новости
+                           </a>
+                        </li>
+
+                     </ul>
+                  </nav>
+               </div>
+               <!-- /.burger-modal -->
+            </div>
+            <!-- /.container_modal__burger -->
+         </div>
+         <!-- /.wrapper-modal__burger -->
+
+      </div>
 
    </div>
+   <!-- /.body__wrapper -->
 
    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
    <script src="./js/swiper.js"></script>

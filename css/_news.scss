@@ -1,0 +1,118 @@
+.news__item_link {
+   text-decoration: none;
+}
+
+.main-news {
+   /* margin-top: 140px; */
+   padding-top: 140px;
+   margin-left: 0;
+   margin-right: 0;
+}
+
+.news {
+   position: relative;
+   width: 100%;
+   overflow: hidden;
+   // padding-top: 41px;
+}
+
+.news-main {
+   padding-bottom: 120px;
+}
+
+.news-header {
+   text-align: start;
+   color: #3E4757;
+   font-family: Neucha;
+   font-size: 64px;
+   font-weight: 400;
+}
+
+.news-header_main {
+   margin-bottom: 60px;
+}
+
+.news-decoration__img {
+   position: absolute;
+   left: 470px;
+   top: 25px;
+   z-index: 10;
+}
+
+.news-grid {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: repeat(5, auto);
+   gap: 30px;
+   // grid-template-columns: repeat(4, 1fr);
+   // grid-template-columns: repeat(auto-fit, minmax(auto, auto));
+}
+
+.news__item {
+   box-sizing: border-box;
+   // grid-column: span 1;
+   color: #000;
+   font-size: 1.6rem;
+}
+
+.news__item:not(:first-child) {
+   grid-column: span;
+}
+
+.news__item-1 {
+   grid-area: 1 / 1/ span 3 / span 2;
+}
+
+// .news__item:not(:first-child) {
+//    color: red;
+// }
+
+.news__item_date {
+   text-align: left;
+   margin-bottom: 10px;
+   color: #3E4757;
+   font-family: 'Open Sans';
+   font-size: 14px;
+   font-weight: 300;
+}
+
+.news__item_text {
+   text-align: left;
+   color: #3E4757;
+   font-family: 'Open Sans';
+   font-size: 16px;
+   font-weight: 400;
+}
+
+.swiper-pagination-news {
+   margin-top: 30px;
+   margin-bottom: 120px;
+   text-align: center;
+   // gap: 10px;
+}
+
+.swiper-pagination-news>.swiper-pagination-bullet {
+   opacity: 1;
+   // position: relative;
+   margin: 0 8px !important;
+   width: 16px;
+   height: 16px;
+   background-color: rgba(255, 255, 255, 1);
+   // border-radius: 0;
+
+   color: #FF9500;
+   font-family: Neucha;
+   font-size: 32px;
+   font-weight: 400;
+}
+
+.swiper-pagination-news>.swiper-pagination-bullet-active {
+   // border: 2px solid #dde9b5;
+   // background: #dde9b5;
+   color: #3E4757;
+}
+
+.swiper-slide__block {
+   text-align: center;
+   /* margin-top: 150px; */
+}

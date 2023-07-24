@@ -1,18 +1,17 @@
-const swiper = new Swiper('.swiper', {
+const swiperN = new Swiper('.swiper-news', {
 	// Optional parameters
 	// direction: 'vertical',
 	// direction: 'horizontal',
 	loop: true,
 
-	// autoplay: {
-	// 	delay: 500,
-	// },
-
 	// If we need pagination
 	pagination: {
-		el: '.swiper-pagination-review',
+		el: '.swiper-pagination-news',
 		clickable: true,
 		// dynamicBullets: true,
+		renderBullet: function (index, className) {
+			return '<span class="' + className + '">' + (index + 1) + '</span>';
+		},
 	},
 
 	grabCursor: true,
@@ -29,18 +28,17 @@ const swiper = new Swiper('.swiper', {
 });
 
 // ==================== Автопрокрутка ===================
-// let sliderReview = document.getElementById('swiper1');
+// let sliderBlock = document.querySelector('.swiper-wrapper');
 
-// sliderReview.addEventListener('mouseenter', () => {
-// 	console.log('Yes!!!');
-// 	swiper.params.autoplay.disableOnInteraction = false;
-// 	swiper.params.autoplay.delay = 500;
-// 	swiper.autoplay.start();
+// sliderBlock.addEventListener('mouseenter', (e) => {
+// 	console.log('Yes');
+// 	swiperN.params.autoplay.disableOnInteraction = false;
+// 	swiperN.params.autoplay.delay = 1000;
+// 	swiperN.autoplay.start();
 // });
 
-// sliderReview.addEventListener('mouseleave', () => {
-// 	console.log('No!!!');
-// 	swiper.autoplay.stop();
+// sliderBlock.addEventListener('mouseleave', (e) => {
+// 	swiperN.autoplay.stop();
 // });
 
 // ------------------------------------------------------

@@ -8,6 +8,8 @@
 }
 
 @import "reviews";
+@import "news";
+@import "single-news";
 
 *,
 *:after,
@@ -36,6 +38,7 @@ body {
 body {
    font-family: "Montserrat", sans-serif;
    font-style: normal;
+   line-height: normal;
    color: #ffffff;
    margin: 0;
    margin: auto;
@@ -51,6 +54,7 @@ body {
    margin: auto;
    max-width: 192rem;
    background-color: rgb(255, 255, 255);
+
    &-header {
       background-color: #f4f5f8;
       position: absolute;
@@ -59,6 +63,7 @@ body {
       right: 0;
       z-index: 100;
    }
+
    &-dropdown {
       position: absolute;
       margin: auto;
@@ -79,9 +84,11 @@ body {
    padding-right: 4.5rem;
    padding-left: 20px;
    padding-right: 20px;
+
    &__main {
       z-index: 0;
    }
+
    &__dropdown {
       padding-right: auto;
       margin: 0 auto;
@@ -94,21 +101,25 @@ body {
    align-items: center;
    padding-top: 1.2rem;
    padding-bottom: 1.2rem;
+
    &-wrapper {
       z-index: 50;
       display: flex;
       align-items: center;
       justify-content: space-between;
    }
+
    &-menu {
       display: flex;
       flex-direction: row;
       font-size: 1.6rem;
+
       &__item {
          margin-left: 31px;
          text-decoration: none;
          list-style-type: none;
-         & > a {
+
+         &>a {
             text-decoration: none;
             font-family: "Neucha";
             font-style: normal;
@@ -116,6 +127,7 @@ body {
             font-size: 18px;
             line-height: 20px;
             color: #3e4757;
+
             &:hover {
                border-bottom: 2px solid #b57edc;
                color: #3e4757;
@@ -148,12 +160,15 @@ body {
    top: -20;
    margin-left: auto;
    margin-right: auto;
+
    &__item {
       display: inline-block;
+
       & img {
          margin-right: 2rem;
       }
    }
+
    &__link {
       margin-right: 2rem;
       text-decoration: none;
@@ -163,6 +178,7 @@ body {
       font-size: 24px;
       line-height: 26px;
       color: #3e4757;
+
       &_image {
          display: inline-block;
       }
@@ -635,7 +651,7 @@ body {
    padding: 8px;
 }
 
-.burger__menu__item_modal > a {
+.burger__menu__item_modal>a {
    text-decoration: none;
    font-family: "Neucha";
    font-style: normal;
@@ -830,7 +846,7 @@ body {
       margin-bottom: 20px;
    }
 
-   .fund__service > img {
+   .fund__service>img {
       display: none;
    }
 
