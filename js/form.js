@@ -2,7 +2,10 @@
 // const mainFormSearchFields = document.querySelectorAll(
 // 	'.main__form-search-field'
 // );
-const mainFormItem = document.querySelectorAll('.main__form-item');
+
+// Было в работе до применения select
+// --------------------------------------------------------------------
+// const mainFormItem = document.querySelectorAll('.main__form-item');
 // ------------------------------------------------------------------
 
 // ====================================================================
@@ -18,14 +21,17 @@ const mainFormItem = document.querySelectorAll('.main__form-item');
 // 		// activateSearchField();
 // 	});
 // });
-mainFormItem.forEach((field) => {
-	const arrowDown = field.querySelector('.arrow-down');
-	const arrowUp = field.querySelector('.arrow-up');
-	field.addEventListener('click', (event) => {
-		console.dir(event.currentTarget);
-		arrowDown.classList.toggle('hidden');
-		arrowUp.classList.toggle('hidden');
-		event.currentTarget.children[3].classList.toggle('hidden');
-	});
-});
+
+// Было в работе до применения select
+// --------------------------------------------------------------------
+// mainFormItem.forEach((field) => {
+// 	const arrowDown = field.querySelector('.arrow-down');
+// 	const arrowUp = field.querySelector('.arrow-up');
+// 	field.addEventListener('click', (event) => {
+// 		console.dir(event.currentTarget);
+// 		arrowDown.classList.toggle('hidden');
+// 		arrowUp.classList.toggle('hidden');
+// 		event.currentTarget.children[3].classList.toggle('hidden');
+// 	});
+// });
 // --------------------------------------------------------------------

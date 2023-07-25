@@ -10,19 +10,11 @@
    position: relative;
 }
 
-// Вроде, работает и без него
-// .swiper-pagination-review {
-//    height: 20px;
-//    display: flex;
-//    justify-content: center;
-//    bottom: 30px;
-// }
-
 // Важный блок для позиционирования пагинации
 .swiper-pagination-review>.swiper-pagination-bullet {
    opacity: 1;
    position: relative;
-   top: 34px;
+   top: 40px;
 
    width: 16px;
    height: 16px;

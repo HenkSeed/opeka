@@ -302,8 +302,13 @@ body {
    cursor: pointer;
 }
 
+.section-main__form-table select {
+   background: #e5eff7 url("../img/main/select-arrow-down.svg") no-repeat right 14px center !important;
+}
+
 .main__form-item .input {
    /* content: ">"; */
+   box-sizing: border-box;
    appearance: none;
    outline: none;
    border: none;
@@ -322,6 +327,24 @@ body {
    cursor: pointer;
 }
 
+// .main__form-item .input:focus {
+#formSearch:focus {
+   box-sizing: border-box;
+   border-radius: 5px;
+   border: 1px solid #B0DAFC;
+   background: #FFF;
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.section-main__form-table select:focus {
+   background: #fff url("../img/main/select-arrow-up.svg") no-repeat right 14px center !important;
+   box-sizing: border-box;
+   border-radius: 5px;
+   border: 1px solid #B0DAFC;
+   background: #FFF;
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
 .select-arrow {
    position: absolute;
    right: 10px;
@@ -329,11 +352,19 @@ body {
    cursor: pointer;
 }
 
+#formSearch {
+   margin-bottom: 30px;
+}
+
+.main__form-item_link {
+   text-decoration: none;
+}
+
 .submit-button {
    display: block;
    margin-left: auto;
    margin-right: auto;
-   margin-top: 30px;
+   // margin-top: 30px;
    width: 100%;
    outline: none;
    border: none;
@@ -354,6 +385,7 @@ body {
    color: #fff;
    cursor: pointer;
 }
+
 
 .main__form_submit-button {
    display: flex;

@@ -133,14 +133,7 @@
                            <ul class="main__form-list">
                               <li class="main__form-item">
                                  <label for="region">Регион</label><br>
-                                 <div class="main__form-search-field">
-                                    <span class="main__form-search-region">Выберите регион</span>
-                                    <span class="arrow-down"><img src="./img/main/select-arrow-down.svg"
-                                          alt="select-arrow"></span>
-                                    <span class="arrow-up hidden"><img src="./img/main/select-arrow-up.svg"
-                                          alt="select-arrow"></span>
-                                 </div>
-                                 <select class="input hidden" name="region" id="region">
+                                 <select class="input" name="region" id="region" placeholder="Выберите регион">
                                     <option value="">Выберите регион</option>
                                     <option value="altaireg">Алтайский край</option>
                                     <option value="archang">Архангельская область</option>
@@ -222,38 +215,18 @@
                                     <option value="yamalonenezk">Ямало-Ненецкий автономный округ</option>
                                     <option value="yaroslavl">Ярославская область</option>
                                  </select>
-                                 <!-- <img class="select-arrow" id="select-region__arrow" src="./img/select-arrow.svg"
-                                    alt="select-arrow"> -->
                               </li>
                               <li class="main__form-item">
                                  <label for="sex">Пол ребёнка</label><br>
-                                 <div class="main__form-search-field">
-                                    <span class="main__form-search-sex">Выберите пол ребёнка</span>
-                                    <span class="arrow-down"><img src="./img/main/select-arrow-down.svg"
-                                          alt="select arrow down"></span>
-                                    <span class="arrow-up hidden"><img src="./img/main/select-arrow-up.svg"
-                                          alt="select arrow up"></span>
-                                 </div>
-                                 <!-- <span class="sex-search hidden">Выберите пол ребёнка</span> -->
-                                 <select class="input hidden" name="sex" id="sex">
+                                 <select class="input" name="sex" id="sex" placeholder="Выберите пол ребёнка">
                                     <option value="">Выберите пол ребёнка </option>
                                     <option value="boy">Мужской</option>
                                     <option value="girl">Женский</option>
                                  </select>
-                                 <!-- <img class="select-arrow" id="select-sex__arrow" src="./img/select-arrow.svg"
-                                    alt="select-arrow"> -->
                               </li>
                               <li class="main__form-item">
                                  <label for="age">Возраст</label><br>
-                                 <div class="main__form-search-field">
-                                    <span class="main__form-search-age">Укажите возраст ребёнка</span>
-                                    <span class="arrow-down"><img src="./img/main/select-arrow-down.svg"
-                                          alt="select arrow down"></span>
-                                    <span class="arrow-up hidden"><img src="./img/main/select-arrow-up.svg"
-                                          alt="select arrow up"></span>
-                                 </div>
-                                 <!-- <span class="age-search hidden">Укажите возраст ребёнка</span> -->
-                                 <select class="input hidden" name="age" id="age">
+                                 <select class="input" name="age" id="age" placeholder="Укажите возраст ребёнка">
                                     <option value="">Укажите возраст ребёнка</option>
                                     <option value="0-3">0-3 года</option>
                                     <option value="4-6">4-6 лет</option>
@@ -261,19 +234,20 @@
                                     <option value="11-14">11-14 лет</option>
                                     <option value="15-17">15-17 лет</option>
                                  </select>
-                                 <!-- <img class="select-arrow" id="select-age__arrow" src="./img/select-arrow.svg"
-                                    alt="select-arrow"> -->
                               </li>
                               <li class="main__form-item">
                                  <label for="name">Имя</label><br>
-                                 <input class="input" type="text" placeholder="Поиск по имени">
+                                 <input class="input" type="search" name="formSearch" id="formSearch"
+                                    placeholder="Поиск по имени">
                               </li>
                               <li class="main__form-item">
-                                 <div class="main__form_submit-button">
-                                    <button class="button submit-button" type=" submit">НАЙТИ</button>
-                                    <img class="submit-button-arrow" src="./img/main/submit-button-arrow.svg"
-                                       alt="button-arrow">
-                                 </div>
+                                 <a href="#" class="main__form-item_link">
+                                    <div class="main__form_submit-button">
+                                       <button class="button submit-button" type=" submit">НАЙТИ</button>
+                                       <img class="submit-button-arrow" src="./img/main/submit-button-arrow.svg"
+                                          alt="button-arrow">
+                                    </div>
+                                 </a>
                               </li>
 
                            </ul>
