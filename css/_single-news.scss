@@ -1,3 +1,15 @@
+.news-header {
+   text-align: start;
+   color: #3E4757;
+   font-family: Neucha;
+   font-size: 64px;
+   font-weight: 400;
+}
+
+.news-header_single {
+   margin-bottom: 10px;
+}
+
 .single-news {
    /* margin-top: 140px; */
    padding-top: 140px;
@@ -7,10 +19,6 @@
 
 .news-single {
    padding-bottom: 120px;
-}
-
-.news-header_single {
-   margin-bottom: 10px;
 }
 
 .brief__text {
@@ -101,4 +109,102 @@
    grid-column: span;
    color: #000;
    font-size: 1.6rem;
+}
+
+@media (max-width: 1200px) {
+   .single-news {
+      padding-top: calc(90px + (140 - 90) * ((100vw - 320px) / (1200 - 320)));
+   }
+
+   .news-header {
+      font-size: calc(42px + (64 - 42) * ((100vw - 320px) / (1200 - 320)));
+   }
+
+   .brief__text {
+      font-size: calc(18px + (24 - 18) * ((100vw - 320px) / (1200 - 320)));
+   }
+
+   .brief__date {
+      font-size: calc(16px + (22 - 16) * ((100vw - 320px) / (1200 - 320)));
+   }
+
+   .single__text_content {
+      font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1200 - 320)));
+   }
+
+   .grid-video {
+      margin-bottom: calc(35px + (97 - 35) * ((100vw - 320px) / (1200 - 320)));
+   }
+
+   .more-news__header {
+      font-size: calc(24px + (36 - 24) * ((100vw - 320px) / (1200 - 320)));
+      margin-bottom: calc(20px + (40 - 20) * ((100vw - 320px) / (1200 - 320)));
+   }
+
+   .news-single {
+      padding-bottom: calc(40px + (120 - 40) * ((100vw - 320px) / (1200 - 320)));
+   }
+
+   .news__item_text {
+      font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1200 - 320)));
+   }
+}
+
+@media (max-width: 599px) {
+
+   .news-header,
+   .brief__text {
+      text-align: center;
+   }
+
+   .grid-video {
+      grid-template-rows: repeat(1, 1fr);
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 20px;
+      // column-gap: 20px;
+   }
+
+   .more-news__grid {
+      grid-template-columns: repeat(1, 1fr);
+      // gap: 30px;
+   }
+}
+
+@media (max-width: 320px) {
+   .single-news {
+      padding-top: 90px;
+   }
+
+   .news-header {
+      font-size: 42px;
+   }
+
+   .brief__text {
+      font-size: 18px;
+   }
+
+   .brief__date {
+      font-size: 16px;
+   }
+
+   .single__text_content {
+      font-size: 14px;
+   }
+
+   .grid-video {
+      margin-bottom: 35px;
+   }
+
+   .more-news__header {
+      font-size: 24px;
+      margin-bottom: 20px;
+   }
+
+   .news-single {
+      padding-bottom: 40px;
+   }
+
+   .news__item_text {
+      font-size: 14px;
+   }
 }
