@@ -10,7 +10,8 @@
    margin-bottom: 10px;
 }
 
-.single-news {
+.single-news,
+.main-news {
    /* margin-top: 140px; */
    padding-top: 140px;
    margin-left: 0;
@@ -112,7 +113,9 @@
 }
 
 @media (max-width: 1200px) {
-   .single-news {
+
+   .single-news,
+   .main-news {
       padding-top: calc(90px + (140 - 90) * ((100vw - 320px) / (1200 - 320)));
    }
 
@@ -171,7 +174,9 @@
 }
 
 @media (max-width: 320px) {
-   .single-news {
+
+   .single-news,
+   .main-news {
       padding-top: 90px;
    }
 
