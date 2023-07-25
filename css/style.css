@@ -440,10 +440,10 @@
     padding-top: calc(90px + 50 * (100vw - 320px) / 880);
   }
   .news-header {
-    font-size: calc(42px + 22 * (100vw - 320px) / 880);
+    font-size: calc(34px + 30 * (100vw - 320px) / 880);
   }
   .brief__text {
-    font-size: calc(18px + 6 * (100vw - 320px) / 880);
+    font-size: calc(15px + 9 * (100vw - 320px) / 880);
   }
   .brief__date {
     font-size: calc(16px + 6 * (100vw - 320px) / 880);
@@ -484,10 +484,10 @@
     padding-top: 90px;
   }
   .news-header {
-    font-size: 42px;
+    font-size: 34px;
   }
   .brief__text {
-    font-size: 18px;
+    font-size: 15px;
   }
   .brief__date {
     font-size: 16px;
