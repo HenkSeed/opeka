@@ -37,6 +37,10 @@
    display: inline;
 }
 
+.main__form-item #formSearch {
+   margin-bottom: 0;
+}
+
 .main__form-list {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
